@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="register.php">
+        <div>
+        <label for="name">Adiniz : </label>
+        <input type="text" id="name">  
+    </div>
+    <div>
+        <label for="surname">Soyadiniz : </label>
+        <input type="text" id="surname">      
+    </div>
+    <div>
+        <label for="parola">Parola : </label>
+        <input type="password" id="parola">      
+    </div>
+    <div>
+        <label for="intro">Film onerisi</label>
+        <textarea name="" id="intro" cols="30" rows="5"></textarea>
+    </div><br>
+    <div>
+        <label for="cities">Sehir</label>
+        <select name="" id="cities">
+            <option value="54">Sakarya</option>
+            <option value="34">Istanbul</option>
+        </select>
+    </div>
+    <div>
+        <label for="eposta">Email</label>
+        <input type="email" name="" id="eposta">
+    </div>
+    <div>
+        <label for="dogumgunu">Dogum gunu</label>
+        <input type="date" name="" id="dogumgunu">
+    </div>
+    <div>
+        En sevdigin film: <br>
+        <input type="radio" name="ensevdigifilm" id="yokartik">
+        <label for="yokartik">Yok Artik</label><br>
+        <input type="radio" name="ensevdigifilm" id="mujdemiisterim">
+        <label for="mujdemiisterim">Mujdemi isterim</label><br>
+        <input type="radio" name="ensevdigifilm" id="sansimiseveyim">
+        <label for="sansimiseveyim">Sansimi seveyim</label><br>
+    </div>
+    <div>
+        En sevdigin film: <br>
+        <input type="checkbox" name="ensevdigifilm" id="yokartik2">
+        <label for="yokartik2">Yok Artik</label><br>
+        <input type="checkbox" name="ensevdigifilm" id="mujdemiisterim2">
+        <label for="mujdemiisterim2">Mujdemi isterim</label><br>
+        <input type="checkbox" name="ensevdigifilm" id="sansimiseveyim2">
+        <label for="sansimiseveyim2">Sansimi seveyim</label><br>
+    </div>
+        
+
+        <button type="submit">Kaydet</button>
+        <button type="reset">Temizle</button>         
+    </form>
+</body>
+</html>

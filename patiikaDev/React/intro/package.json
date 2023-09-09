@@ -1,14 +1,19 @@
 {
-    "name" : "learning-node",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "start": "node index"
-    },
-    "author": "Arif <arifozden1@gmail.com>",
-    "license" : "ISC",
-    "dependencies": {
-        "slugify": "^1.5.3"
-    }
+  "name": "learning-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Arif <arifozden1@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "slugify": "^1.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "arifozden1"
+  },
+  "description": ""
 }

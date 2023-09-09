@@ -1,7 +1,12 @@
-// setTimeout(() => {
-//     console.log("Merhaba");
-// },2000)
+//import fetch from "node-fetch";
+//import axios from "axios";
 
-setInterval(() => {
-    console.log("saniye");
-},1000);
+const getComments = () => {
+    return new Promise((resolve,reject) => {
+        resolve("Comments");
+    });
+};
+
+getComments()
+.then((data) => console.log(data))
+.catch((e) => console.log(e));

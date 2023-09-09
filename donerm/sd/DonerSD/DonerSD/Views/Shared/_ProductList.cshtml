@@ -1,0 +1,25 @@
+﻿@using DonerSD.Models;
+@model IEnumerable<ProductModel>
+
+<div class="row">
+
+
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <img src="/Upload/@product.Image" class="card-img-top" alt="@product.Name">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <a href="/Home/Details/@product.Id">@product.Name</a>
+                    </h5>
+                    <p class="card-text pt-2 description">@product.Description</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted product-price">@product.Price kr</small>
+                    <a href="/Home/Details/@product.Id" class="btn btn-light btn-sm float-end">Detaljer <i class="fa fa-angle-double-right"></i></a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

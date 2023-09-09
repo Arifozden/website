@@ -6,16 +6,34 @@
     <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
     <title>Document</title>
 </head>
-<body class="bg-warning">
-    <h1><%= name %></h1>
-    <img src="/images/<%= imageUrl %>" alt="" width="100">
-    <p>fiyat : <%= price %></p>
-    <p>
-        <% if (isActive) { %>
-         <span>Urun satista</span>
-         <% } else { %>
-          <span>urun satista degil</span>
-        <% } %>
-    </p>
+<body>
+    <%- include('partials/nav') %>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                
+                 
+                
+                <div class="card mb-3">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="/images/<%= product.imageUrl %>" alt="" class="img-fluid">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><%= product.name %></h5>
+                                <p class="card-text"><%= product.price %></p>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ad placeat deserunt dolor, distinctio iste. Deserunt sapiente animi nemo repellat cum neque ea ab explicabo libero, sint minus unde aliquid.</p>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. At voluptates temporibus dignissimos laborum sapiente necessitatibus officia, molestiae, et odio, alias ratione accusamus laboriosam quos dolor possimus nostrum similique illum earum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+       </div>
 </body>
 </html>

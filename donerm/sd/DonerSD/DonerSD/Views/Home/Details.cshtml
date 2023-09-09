@@ -1,0 +1,111 @@
+﻿@using DonerSD.Entity
+@model Product
+
+@{
+    ViewBag.Title = "Details";
+}
+<div id="product-details" class="container" pb-5>
+    <div class="row">
+        <div class="col-md-6">
+            <img src="/Upload/@Model.Image" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>@Model.Name</h1>
+                </div>
+            </div>
+            <div class="row mt-1">
+                <div class="col-md-12">
+                    @if (Model.IsApproved)
+            {
+<span class="badge bg-primary">In Stock</span>
+            }
+else
+            {
+                <span class="badge bg-danger">Out of Stock</span>
+            }
+                    
+
+                    <span class="product-number">#1908</span>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <div id="description">
+                        @Model.Description
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <span class="badge bg-success">53</span>
+                </div>
+                <div id="write-review" class="col-md-4">
+                    <a href="#">Skriv din kommentar</a>
+
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-12">
+                    <h4 id="product-price">@Model.Price NOK</h4>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <button class="btn btn-success">
+                        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                        Legg i kurv
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#beskrivelse-tab-pane" type="button" role="tab" aria-controls="beskrivelse-tab-pane" aria-selected="true">Beskrivelse</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#betalingstype-tab-pane" type="button" role="tab" aria-controls="betalingstype-tab-pane" aria-selected="false">Betalingstype</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#kommentarer-tab-pane" type="button" role="tab" aria-controls="kommentarer-tab-pane" aria-selected="false">Kommentarer</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" id="home-tab" data-bs-toggle="tab" data-bs-target="#dropdown1-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Action</button></li>
+                        <li><button class="dropdown-item" id="home-tab" data-bs-toggle="tab" data-bs-target="#dropdown2-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Another Action</button></li>
+                        <li><button class="dropdown-item" id="home-tab" data-bs-toggle="tab" data-bs-target="#dropdown3-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Something else here</button></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><button class="dropdown-item" id="home-tab" data-bs-toggle="tab" data-bs-target="#dropdown4-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Separated link</button></li>
+                    </ul>
+                </li>
+            </ul>
+            <br>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="beskrivelse-tab-pane" role="tabpanel" aria-labelledby="beskrivelse-tab" tabindex="0">Beskrivelse</div>
+                <div class="tab-pane fade" id="betalingstype-tab-pane" role="tabpanel" aria-labelledby="betalingstype-tab" tabindex="0">Betalingstype</div>
+                <div class="tab-pane fade" id="kommentarer-tab-pane" role="tabpanel" aria-labelledby="kommentarer-tab" tabindex="0">Kommentarer</div>
+                <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">Disabled</div>
+                <div class="tab-pane fade" id="dropdown1-tab-pane" role="tabpanel" aria-labelledby="dropdown1-tab" tabindex="0">Action</div>
+                <div class="tab-pane fade" id="dropdown2-tab-pane" role="tabpanel" aria-labelledby="dropdown2-tab" tabindex="0">Another Action</div>
+                <div class="tab-pane fade" id="dropdown3-tab-pane" role="tabpanel" aria-labelledby="dropdown3-tab" tabindex="0">Something else here</div>
+                <div class="tab-pane fade" id="dropdown4-tab-pane" role="tabpanel" aria-labelledby="dropdown4-tab" tabindex="0">Separated link</div>
+            </div>
+        </div>
+    </div>
+</div>

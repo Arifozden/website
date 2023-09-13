@@ -10,6 +10,7 @@ using DonerSD.Entity;
 
 namespace DonerSD.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class ProductController : Controller
     {
         private DataContext db = new DataContext();

@@ -95,3 +95,5 @@ C:\website\donerm\sd\DonerSD\DonerSD\bin\Microsoft.Owin.Security.OAuth.xml
 C:\website\donerm\sd\DonerSD\DonerSD\bin\Newtonsoft.Json.xml
 C:\website\donerm\sd\DonerSD\DonerSD\bin\xunit.abstractions.xml
 C:\website\donerm\sd\DonerSD\DonerSD\bin\xunit.core.xml
+C:\website\donerm\sd\DonerSD\DonerSD\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\website\donerm\sd\DonerSD\DonerSD\bin\Microsoft.Owin.Host.SystemWeb.xml

@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Web;
+
+namespace DonerSD.Models
+{
+    public class ShippingDetails
+    {
+        [Required(ErrorMessage = "Vennligst skriv navn og etternavn!")]
+        public string FullName { get; set; }
+
+        [Required(ErrorMessage = "Vennligst skriv adressetittel!")]
+        public string AdresseTittel { get; set; }
+        [Required(ErrorMessage = "Vennligst skriv adresse!")]
+        public string Adresse { get; set; }
+        [Required(ErrorMessage = "Vennligst skriv postnummer!")]
+        public string PostNummer { get; set; }
+        [Required(ErrorMessage = "Vennligst skriv sted!")]
+        public string PostSted { get; set; }
+        [Required(ErrorMessage = "Vennligst skriv kommune!")]
+        public string Kommune { get; set; }
+        
+        
+        
+    }
+}

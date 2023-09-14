@@ -24,9 +24,9 @@
                 @Html.ValidationSummary()
 
                 <div class="form-group row">
-                    <label for="navnEtternavn" class="col-sm-2 col-form-label">Navn Etternavn</label>
+                    <label for="navnEtternavn" class="col-sm-2 col-form-label">Username</label>
                     <div class="col-sm-6">
-                        @Html.TextBoxFor(x => x.FullName, new { placeholder = "skriv inn navn og etternavn", @class = "form-control" })
+                     <span class="bg-warning">@User.Identity.Name</span>
                     </div>
                 </div>
                 <p></p>

@@ -76,6 +76,9 @@ namespace DonerSD.Controllers
             if (ModelState.IsValid)
             {
                 //siparisi veritabanina kaydet
+
+                SaveOrder (cart,entity);
+
                 // cart i sifirla
                 cart.Clear();
                 return View("Completed");
@@ -84,6 +87,36 @@ namespace DonerSD.Controllers
             {
                 return View(entity);
             }
+        }
+
+        private void SaveOrder(Cart cart, ShippingDetails entity)
+        {
+            var order = new Order();
+
+            order.OrderNumber = "A" + (new Random()).Next(111111, 999999).ToString();
+            order.Total = cart.Total();
+            order.OrderDate = DateTime.Now;
+            order.OrderState = EnumOrderState.Waiting;
+            order.Username = User.Identity.Name;
+
+            order.AdresseTittel = entity.AdresseTittel;
+            order.Adresse = entity.Adresse;
+            order.PostNummer = entity.PostNummer;
+            order.PostSted = entity.PostSted;
+            order.Kommune = entity.Kommune;
+            order.Orderlines = new List<OrderLine>();
+
+            foreach (var pr in cart.CartLines)
+            {
+                var orderline = new OrderLine();
+                orderline.Quantity = pr.Quantity;
+                orderline.Price = pr.Quantity * pr.Product.Price;
+                orderline.ProductId = pr.Product.Id;
+
+                order.Orderlines.Add(orderline);
+            }
+            db.Orders.Add(order);
+            db.SaveChanges();
         }
     }
 }

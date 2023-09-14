@@ -8,8 +8,7 @@ namespace DonerSD.Models
 {
     public class ShippingDetails
     {
-        [Required(ErrorMessage = "Vennligst skriv navn og etternavn!")]
-        public string FullName { get; set; }
+        public string Username { get; set; }
 
         [Required(ErrorMessage = "Vennligst skriv adressetittel!")]
         public string AdresseTittel { get; set; }

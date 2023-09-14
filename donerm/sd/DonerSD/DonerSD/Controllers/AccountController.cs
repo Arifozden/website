@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DonerSD.Entity;
 using DonerSD.Identity;
 using DonerSD.Models;
 using Microsoft.AspNet.Identity;
@@ -13,8 +14,9 @@ namespace DonerSD.Controllers
 {
     public class AccountController : Controller
     {
-        private UserManager<ApplicationUser> UserManager;
-        private RoleManager<ApplicationRole> RoleManager;
+        private DataContext db = new DataContext();
+        private readonly UserManager<ApplicationUser> UserManager;
+        private readonly RoleManager<ApplicationRole> RoleManager;
 
         public AccountController()
         {
@@ -25,6 +27,52 @@ namespace DonerSD.Controllers
             RoleManager = new RoleManager<ApplicationRole>(roleStore);
         }
 
+        [Authorize]
+        public ActionResult Index()
+        {
+            var username = User.Identity.Name;
+            var orders = db.Orders
+                .Where(i => i.Username == username)
+                .Select(i => new UserOrderModel()
+                {
+                    Id = i.Id,
+                    OrderNumber = i.OrderNumber,
+                    OrderDate = i.OrderDate,
+                    OrderState = i.OrderState,
+                    Total = i.Total,
+                }).OrderByDescending(i=>i.OrderDate).ToList();
+
+            return View(orders);
+        }
+
+        [Authorize]
+        public ActionResult Details(int id)
+        {
+            var entity = db.Orders.Where(i => i.Id == id)
+                .Select(i => new OrderDetailsModel()
+                {
+                    OrderId = i.Id,
+                    OrderNumber = i.OrderNumber,
+                    Total = i.Total,
+                    OrderDate = i.OrderDate,
+                    OrderState = i.OrderState,
+                    AdresseTittel = i.AdresseTittel,
+                    Adresse = i.Adresse,
+                    Kommune = i.Kommune,
+                    PostSted = i.PostSted,
+                    PostNummer = i.PostNummer,
+                    Orderlines = i.Orderlines.Select(a=>new OrderLineModel()
+                    {
+                        ProductId = a.ProductId,
+                        ProductName = a.Product.Name.Length>40?a.Product.Name.Substring(0,37)+"..." : a.Product.Name,
+                        Image = a.Product.Image,
+                        Quantity = a.Quantity,
+                        Price = a.Price,
+                    }).ToList()
+                }).FirstOrDefault();
+
+            return View(entity);
+        }
 
         // GET: Account
         public ActionResult Register()

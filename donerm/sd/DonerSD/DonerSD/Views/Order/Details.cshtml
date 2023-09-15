@@ -1,0 +1,105 @@
+﻿@using DonerSD.Entity
+@model DonerSD.Models.OrderDetailsModel
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+            <h2>Order Detaljer</h2>
+            <hr />
+            @if (TempData["message"] != null)
+            {
+                <div class="alert alert-success">
+                    @TempData["message"]
+                </div>
+            }
+            <dl class="row">
+                
+                <dt class="col-sm-3">Username</dt>
+                <dd class="col-sm-9">@Model.Username</dd>
+                
+
+                <dt class="col-sm-3">Order Status</dt>
+                <dd class="col-sm-9">
+                    
+                        @using (Html.BeginForm("UpdateOrderState", "Order", FormMethod.Post))
+                        {
+                            @Html.HiddenFor(i => i.OrderId)
+                            <dl class="row">
+                                <dt class="col-sm-8">@Html.EnumDropDownListFor(i => i.OrderState, "Select Order State", new { @class = "form-control" })</dt>
+                                <dt class="col-sm-4"><button type="submit" class="btn btn-primary">Update</button></dt>
+                            </dl>
+                        }
+                </dd>
+
+                <dt class="col-sm-3">Order Id</dt>
+                <dd class="col-sm-9">@Model.OrderId</dd>
+
+                <dt class="col-sm-3">Order Number</dt>
+                <dd class="col-sm-9">@Model.OrderNumber</dd>
+
+                <dt class="col-sm-3">Total</dt>
+                <dd class="col-sm-9">@Model.Total NOK</dd>
+
+                <dt class="col-sm-3">Order Date</dt>
+                <dd class="col-sm-9">@Model.OrderDate</dd>
+
+                <dt class="col-sm-3">Adresse</dt>
+                <dd class="col-sm-9">
+                    @Model.AdresseTittel
+                <hr />
+                @Model.Adresse
+                <br />
+                @Model.PostNummer - @Model.PostSted
+                <br />
+                @Model.Kommune
+            </dd>
+
+            <dt class="col-sm-3">Products</dt>
+            <dd class="col-sm-9">
+                <table class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th style="width: 15%;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model.Orderlines)
+                        {
+                            <tr>
+                                <td>
+                                    <img src="/Upload/@item.Image" width="75px" />
+                                </td>
+                                <td>@item.ProductName</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.Price NOK</td>
+                                <td>
+                                    <a href="/Home/Details/@item.ProductId" class="btn btn-primary btn-sm" target="_blank">
+                                        Product Details&nbsp;<i class="fa fa-angle-double-right"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+
+
+                    </tbody>
+                    <tfoot>
+                    <td colspan="3">Total</td>
+                    <td></td>
+                    <td></td>
+                    </tfoot>
+                </table>
+            </dd>
+
+        </dl>
+    </div>
+</div>
+</div>
+

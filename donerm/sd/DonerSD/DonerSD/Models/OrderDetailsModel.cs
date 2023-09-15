@@ -9,12 +9,12 @@ namespace DonerSD.Models
     public class OrderDetailsModel
     {
         public int OrderId { get; set; }
+        public string Username { get; set; }
         public string OrderNumber { get; set; }
         public double Total { get; set; }
         public DateTime OrderDate { get; set; }
         public EnumOrderState OrderState { get; set; }
 
-        public string Username { get; set; }
         public string AdresseTittel { get; set; }
         public string Adresse { get; set; }
         public string PostNummer { get; set; }

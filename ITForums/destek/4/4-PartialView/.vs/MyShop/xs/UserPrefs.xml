@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{EED2ED93-54AD-48E9-9C4E-7F60C7D8DCA7}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyShop/Views/_ViewImports.cshtml">
+    <Files>
+      <File FileName="MyShop/Views/Home/Index.cshtml" Line="9" Column="29" />
+      <File FileName="MyShop/Views/Item/Table.cshtml" Line="7" Column="1" />
+      <File FileName="MyShop/Views/Shared/_ItemTable.cshtml" Line="17" Column="26" />
+      <File FileName="MyShop/Views/Item/Grid.cshtml" Line="1" Column="1" />
+      <File FileName="MyShop/Views/Item/Details.cshtml" Line="1" Column="1" />
+      <File FileName="MyShop/Views/_ViewImports.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyShop" expanded="True">
+            <Node name="MyShop" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Item" expanded="True" />
+                <Node name="_ViewImports.cshtml" selected="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.MyShop PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

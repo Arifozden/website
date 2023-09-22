@@ -1,0 +1,11 @@
+﻿@model QuestionListViewModel
+
+<h1>List of Shop Items (@Model.CurrentViewName View)</h1>
+<a href="/Question/Table">Table View</a>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var question in Model.Questions)
+    {
+        <partial name="_QuestıonCard" model="question"/>
+    }
+</div>

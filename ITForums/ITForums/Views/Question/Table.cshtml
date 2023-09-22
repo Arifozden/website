@@ -1,0 +1,8 @@
+﻿@model QuestionListViewModel
+
+<h1>List of Questions (@Model.CurrentViewName View)</h1>
+<a href="/Question/Grid">Grid View</a>
+
+<h1>@ViewBag.CurrentViewName</h1>
+
+<partial name="_QuestionTable" model="Model.Questions"/>

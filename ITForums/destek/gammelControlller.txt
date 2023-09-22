@@ -1,0 +1,106 @@
+using ITForums.Models;
+using ITForums.ViewModels;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+
+namespace ITForums.Controllers
+{
+    public class QuestionController : Controller
+    {
+        private readonly QuestionDbContext _questionDbContext;
+
+        public QuestionController(QuestionDbContext questionDbContext)
+        {
+            _questionDbContext = questionDbContext;
+        }
+
+
+        public IActionResult Table()
+        {
+            List<Question> questions = _questionDbContext.Questions.ToList();
+            var QuestionListViewModel = new QuestionListViewModel(questions, "Table");
+            return View(QuestionListViewModel);
+        }
+
+        public IActionResult Grid()
+        {
+            List<Question> questions = _questionDbContext.Questions.ToList();
+            var QuestionListViewModel = new QuestionListViewModel(questions, "Grid");
+            return View(QuestionListViewModel);
+        }
+
+        public IActionResult Details(int id)
+        {
+            List<Question> questions = _questionDbContext.Questions.ToList(); ;
+            var question = questions.FirstOrDefault(x => x.Id == id);
+            if (question == null)
+                return NotFound();
+            return View(question);
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Question question)
+        {
+            if (ModelState.IsValid)
+            {
+                _questionDbContext.Questions.Add(question);
+                _questionDbContext.SaveChanges();
+                return RedirectToAction(nameof(Table));
+            }
+            return View(question);
+        }
+
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            var question = _questionDbContext.Questions.Find(id);
+            if (question == null)
+            {
+                return NotFound();
+            }
+            return View(question);
+        }
+
+        [HttpPost]
+        public IActionResult Update(Question question)
+        {
+            if (ModelState.IsValid)
+            {
+                _questionDbContext.Questions.Update(question);
+                _questionDbContext.SaveChanges();
+                return RedirectToAction(nameof(Table));
+            }
+            return View(question);
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            var question = _questionDbContext.Questions.Find(id);
+            if (question == null)
+            {
+                return NotFound();
+            }
+            return View(question);
+        }
+
+        [HttpPost]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            var question = (_questionDbContext.Questions.Find(id));
+            if (question==null)
+            {
+                return NotFound();
+            }
+            _questionDbContext.Questions.Remove(question);
+            _questionDbContext.SaveChanges();
+            return RedirectToAction(nameof(Table));
+        }
+    }
+}

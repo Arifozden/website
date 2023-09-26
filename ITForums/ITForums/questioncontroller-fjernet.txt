@@ -1,0 +1,67 @@
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(Question question)
+        {
+            if (ModelState.IsValid)
+            {
+                _questionDbContext.Questions.Add(question);
+                await _questionDbContext.SaveChangesAsync();
+                return RedirectToAction(nameof(Table));
+            }
+            return View(question);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Update(int id)
+        {
+            var question = await _questionDbContext.Questions.FindAsync(id);
+            if (question == null)
+            {
+                return NotFound();
+            }
+            return View(question);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Update(Question question)
+        {
+            if (ModelState.IsValid)
+            {
+                _questionDbContext.Questions.Update(question);
+                await _questionDbContext.SaveChangesAsync();
+                return RedirectToAction(nameof(Table));
+            }
+            return View(question);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var question = await _questionDbContext.Questions.FindAsync(id);
+            if (question == null)
+            {
+                return NotFound();
+            }
+            return View(question);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var question = await _questionDbContext.Questions.FindAsync(id);
+            if (question==null)
+            {
+                return NotFound();
+            }
+            _questionDbContext.Questions.Remove(question);
+            await _questionDbContext.SaveChangesAsync();
+            return RedirectToAction(nameof(Table));
+        }
+    }
+}

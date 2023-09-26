@@ -79,3 +79,17 @@ C:\website\ITForums\ITForums\bin\Debug\net6.0\Humanizer.dll
 C:\website\ITForums\ITForums\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\website\ITForums\ITForums\bin\Debug\net6.0\Mono.TextTemplating.dll
 C:\website\ITForums\ITForums\bin\Debug\net6.0\System.CodeDom.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Castle.Core.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Serilog.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Serilog.Extensions.Logging.File.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Serilog.Formatting.Compact.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Serilog.Sinks.Async.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\website\ITForums\ITForums\bin\Debug\net6.0\Serilog.Sinks.RollingFile.dll
+C:\website\ITForums\ITForums\obj\Debug\net6.0\ITForums.MvcApplicationPartsAssemblyInfo.cs

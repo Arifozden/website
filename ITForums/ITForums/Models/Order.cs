@@ -6,9 +6,9 @@
         public string OrderDate { get; set; } = string.Empty;
         public int CustomerId { get; set; }
         //navigation property
-        public Customer Customer { get; set; } = default!;
+        public virtual Customer Customer { get; set; } = default!;
         //navigation property
-        public List<OrderQuestion>? OrderQuestions { get; set; }
+        public virtual List<OrderQuestion>? OrderQuestions { get; set; }
         public decimal TotalPrice { get; set; }
     }
 }

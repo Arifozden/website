@@ -1,4 +1,5 @@
-﻿using ITForums.Models;
+﻿using ITForums.DAL;
+using ITForums.Models;
 using ITForums.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -8,23 +9,37 @@ namespace ITForums.Controllers
 {
     public class QuestionController : Controller
     {
-        private readonly QuestionDbContext _questionDbContext;
+        private readonly IQuestionRepository _questionRepository;
+        private readonly ILogger<QuestionController> _logger;
 
-        public QuestionController(QuestionDbContext questionDbContext)
+        public QuestionController(IQuestionRepository questionRepository, ILogger<QuestionController> logger)
         {
-            _questionDbContext = questionDbContext;
+            _questionRepository = questionRepository;
+            _logger = logger;
         }
 
         public async Task<IActionResult> Table()
         {
-            List<Question> questions = await _questionDbContext.Questions.ToListAsync();
+            var questions = await _questionRepository.GetAll();
+            if (questions == null)
+            {
+                _logger.LogError("[QuestionController] Question list not found while executing _questionRepository" +
+                                 ".GetAll()");
+                return NotFound("Question list not found");
+            }
             var questionListViewModel = new QuestionListViewModel(questions, "Table");
             return View(questionListViewModel);
         }
 
         public async Task<IActionResult> Grid()
         {
-            List<Question> questions = await _questionDbContext.Questions.ToListAsync();
+            var questions = await _questionRepository.GetAll();
+            if (questions == null)
+            {
+                _logger.LogError("[QuestionController] Question list not found while executing _questionRepository" +
+                                 ".GetAll()");
+                return NotFound("Question list not found");
+            }
             var questionListViewModel = new QuestionListViewModel(questions, "Grid");
             return View(questionListViewModel);
         }
@@ -32,9 +47,13 @@ namespace ITForums.Controllers
         public async Task<IActionResult> Details(int id)
         {
             //List<Question> questions = _questionDbContext.Questions.ToList(); ;
-            var question = await _questionDbContext.Questions.FirstOrDefaultAsync(x => x.Id == id);
+            var question = await _questionRepository.GetQuestionById(id);
             if (question == null)
-                return NotFound();
+            {
+                _logger.LogError("[QuestionController] Question not found for the QuestionId" +
+                                 " {QuestionId:0000}",id);
+                return NotFound("Question  not found for the QuestionId");
+            }
             return View(question);
         }
 
@@ -49,20 +68,21 @@ namespace ITForums.Controllers
         {
             if (ModelState.IsValid)
             {
-                _questionDbContext.Questions.Add(question);
-                await _questionDbContext.SaveChangesAsync();
-                return RedirectToAction(nameof(Table));
+                bool returnOk = await _questionRepository.Create(question);
+                if(returnOk) return RedirectToAction(nameof(Table));
             }
+            _logger.LogWarning("[QuestionController] Question creation failed {@question}", question);
             return View(question);
         }
 
         [HttpGet]
         public async Task<IActionResult> Update(int id)
         {
-            var question = await _questionDbContext.Questions.FindAsync(id);
+            var question = await _questionRepository.GetQuestionById(id);
             if (question == null)
             {
-                return NotFound();
+                _logger.LogError("[QuestionController] Question not found when updating the QuestionId {QuestionId:0000}",id);
+                return BadRequest("Question not found for the QuestionId");
             }
             return View(question);
         }
@@ -72,20 +92,21 @@ namespace ITForums.Controllers
         {
             if (ModelState.IsValid)
             {
-                _questionDbContext.Questions.Update(question);
-                await _questionDbContext.SaveChangesAsync();
-                return RedirectToAction(nameof(Table));
+               bool returnOk = await _questionRepository.Update(question);
+               if(returnOk) return RedirectToAction(nameof(Table));
             }
+            _logger.LogWarning("[QuestionController] Question update failed {@question}", question);
             return View(question);
         }
 
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-            var question = await _questionDbContext.Questions.FindAsync(id);
+            var question = await _questionRepository.GetQuestionById(id);
             if (question == null)
             {
-                return NotFound();
+                _logger.LogError("[QuestionController] Question not found for the QuestionId {QuestionId:0000}", id);
+                return BadRequest("Question not found for the QuestionId");
             }
             return View(question);
         }
@@ -93,13 +114,12 @@ namespace ITForums.Controllers
         [HttpPost]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var question = await _questionDbContext.Questions.FindAsync(id);
-            if (question==null)
+            bool returnOk = await _questionRepository.Delete(id);
+            if (!returnOk)
             {
-                return NotFound();
+                _logger.LogError("[QuestionController] Question deletion failed for the QuestionId {QuestionId:0000}",id);
+                return BadRequest("Question deletion failed");
             }
-            _questionDbContext.Questions.Remove(question);
-            await _questionDbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Table));
         }
     }

@@ -1,0 +1,33 @@
+2023-08-24 14:36:26.320 +02:00 [Information] User profile is available. Using '"/Users/baifanz/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2023-08-24 14:36:26.567 +02:00 [Information] Now listening on: "https://localhost:7205"
+2023-08-24 14:36:26.567 +02:00 [Information] Now listening on: "http://localhost:5112"
+2023-08-24 14:36:26.570 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-08-24 14:36:26.571 +02:00 [Information] Hosting environment: "Development"
+2023-08-24 14:36:26.572 +02:00 [Information] Content root path: "/Users/baifanz/Projects/ITPE32-23H/7-Input-Validation/MyShop"
+2023-08-24 14:36:27.725 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/ - -
+2023-08-24 14:36:27.745 +02:00 [Information] Executing endpoint '"MyShop.Controllers.HomeController.Index (MyShop)"'
+2023-08-24 14:36:27.751 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MyShop.Controllers.HomeController" ("MyShop").
+2023-08-24 14:36:27.757 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-08-24 14:36:27.792 +02:00 [Information] Executed ViewResult - view "Index" executed in 36.6218ms.
+2023-08-24 14:36:27.793 +02:00 [Information] Executed action "MyShop.Controllers.HomeController.Index (MyShop)" in 41.6646ms
+2023-08-24 14:36:27.793 +02:00 [Information] Executed endpoint '"MyShop.Controllers.HomeController.Index (MyShop)"'
+2023-08-24 14:36:27.796 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 71.4455ms
+2023-08-24 14:36:29.445 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Order/Table - -
+2023-08-24 14:36:29.448 +02:00 [Information] Executing endpoint '"MyShop.Controllers.OrderController.Table (MyShop)"'
+2023-08-24 14:36:29.456 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Order\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "MyShop.Controllers.OrderController" ("MyShop").
+2023-08-24 14:36:29.501 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-08-24 14:36:29.542 +02:00 [Information] Executed ViewResult - view "Table" executed in 40.6893ms.
+2023-08-24 14:36:29.542 +02:00 [Information] Executed action "MyShop.Controllers.OrderController.Table (MyShop)" in 85.3925ms
+2023-08-24 14:36:29.542 +02:00 [Information] Executed endpoint '"MyShop.Controllers.OrderController.Table (MyShop)"'
+2023-08-24 14:36:29.544 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Order/Table - - - 200 - text/html;+charset=utf-8 99.4542ms
+2023-08-24 14:36:30.902 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Order/CreateOrderItem - -
+2023-08-24 14:36:30.906 +02:00 [Information] Executing endpoint '"MyShop.Controllers.OrderController.CreateOrderItem (MyShop)"'
+2023-08-24 14:36:30.911 +02:00 [Information] Route matched with "{action = \"CreateOrderItem\", controller = \"Order\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrderItem()" on controller "MyShop.Controllers.OrderController" ("MyShop").
+2023-08-24 14:36:30.970 +02:00 [Information] Executing ViewResult, running view "CreateOrderItem".
+2023-08-24 14:36:30.995 +02:00 [Information] Executed ViewResult - view "CreateOrderItem" executed in 25.0175ms.
+2023-08-24 14:36:30.995 +02:00 [Information] Executed action "MyShop.Controllers.OrderController.CreateOrderItem (MyShop)" in 84.055ms
+2023-08-24 14:36:30.995 +02:00 [Information] Executed endpoint '"MyShop.Controllers.OrderController.CreateOrderItem (MyShop)"'
+2023-08-24 14:36:30.995 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Order/CreateOrderItem - - - 200 - text/html;+charset=utf-8 92.9108ms
+2023-08-24 14:36:35.289 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:7205/Order/CreateOrderItem application/x-www-form-urlencoded 273
+2023-08-24 14:36:35.290 +02:00 [Information] Executing endpoint '"MyShop.Controllers.OrderController.CreateOrderItem (MyShop)"'
+2023-08-24 14:36:35.313 +02:00 [Information] Route matched with "{action = \"CreateOrderItem\", controller = \"Order\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrderItem(MyShop.Models.OrderItem)" on controller "MyShop.Controllers.OrderController" ("MyShop").

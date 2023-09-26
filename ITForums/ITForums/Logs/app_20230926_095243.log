@@ -1,0 +1,260 @@
+2023-09-26 09:52:46.866 +02:00 [Information] User profile is available. Using '"C:\Users\arifo\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-26 09:52:47.124 +02:00 [Information] Now listening on: "https://localhost:7133"
+2023-09-26 09:52:47.125 +02:00 [Information] Now listening on: "http://localhost:5244"
+2023-09-26 09:52:47.133 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-09-26 09:52:47.135 +02:00 [Information] Hosting environment: "Development"
+2023-09-26 09:52:47.136 +02:00 [Information] Content root path: "C:\website\ITForums\ITForums\"
+2023-09-26 09:52:48.104 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/ - -
+2023-09-26 09:52:48.179 +02:00 [Information] Executing endpoint '"ITForums.Controllers.HomeController.Index (ITForums)"'
+2023-09-26 09:52:48.196 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "ITForums.Controllers.HomeController" ("ITForums").
+2023-09-26 09:52:48.264 +02:00 [Information] Executing action method "ITForums.Controllers.HomeController.Index (ITForums)" - Validation state: Valid
+2023-09-26 09:52:48.270 +02:00 [Information] Executed action method "ITForums.Controllers.HomeController.Index (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.526ms.
+2023-09-26 09:52:48.280 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-26 09:52:48.484 +02:00 [Information] Executed ViewResult - view "Index" executed in 204.128ms.
+2023-09-26 09:52:48.489 +02:00 [Information] Executed action "ITForums.Controllers.HomeController.Index (ITForums)" in 291.8716ms
+2023-09-26 09:52:48.490 +02:00 [Information] Executed endpoint '"ITForums.Controllers.HomeController.Index (ITForums)"'
+2023-09-26 09:52:48.519 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/ - - - 200 - text/html;+charset=utf-8 420.2901ms
+2023-09-26 09:52:48.552 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:52:48.552 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:52:48.562 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 9.6923ms
+2023-09-26 09:52:48.569 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.6871ms
+2023-09-26 09:53:15.606 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Order/Table - -
+2023-09-26 09:53:15.618 +02:00 [Information] Executing endpoint '"ITForums.Controllers.OrderController.Table (ITForums)"'
+2023-09-26 09:53:15.623 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Order\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "ITForums.Controllers.OrderController" ("ITForums").
+2023-09-26 09:53:15.698 +02:00 [Information] Executing action method "ITForums.Controllers.OrderController.Table (ITForums)" - Validation state: Valid
+2023-09-26 09:53:15.769 +02:00 [Information] Executed action method "ITForums.Controllers.OrderController.Table (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 70.8848ms.
+2023-09-26 09:53:15.770 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-26 09:53:15.887 +02:00 [Information] Executed ViewResult - view "Table" executed in 117.6748ms.
+2023-09-26 09:53:15.887 +02:00 [Information] Executed action "ITForums.Controllers.OrderController.Table (ITForums)" in 264.5432ms
+2023-09-26 09:53:15.887 +02:00 [Information] Executed endpoint '"ITForums.Controllers.OrderController.Table (ITForums)"'
+2023-09-26 09:53:15.900 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Order/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 09:53:15.900 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Order/lib/jquery/jquery.js - -
+2023-09-26 09:53:15.909 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Order/lib/bootstrap/js/bootstrap.js - - - 404 0 - 9.6866ms
+2023-09-26 09:53:15.910 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Order/lib/jquery/jquery.js - - - 404 0 - 10.3274ms
+2023-09-26 09:53:15.911 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:15.911 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 1.6436ms
+2023-09-26 09:53:15.920 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:15.928 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Order/Table - - - 200 - text/html;+charset=utf-8 317.8818ms
+2023-09-26 09:53:15.931 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.6454ms
+2023-09-26 09:53:17.495 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Order/CreateOrderQuestion - -
+2023-09-26 09:53:17.496 +02:00 [Information] Executing endpoint '"ITForums.Controllers.OrderController.CreateOrderQuestion (ITForums)"'
+2023-09-26 09:53:17.498 +02:00 [Information] Route matched with "{action = \"CreateOrderQuestion\", controller = \"Order\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrderQuestion()" on controller "ITForums.Controllers.OrderController" ("ITForums").
+2023-09-26 09:53:17.579 +02:00 [Information] Executing action method "ITForums.Controllers.OrderController.CreateOrderQuestion (ITForums)" - Validation state: Valid
+2023-09-26 09:53:17.607 +02:00 [Information] Executed action method "ITForums.Controllers.OrderController.CreateOrderQuestion (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 28.3007ms.
+2023-09-26 09:53:17.609 +02:00 [Information] Executing ViewResult, running view "CreateOrderQuestion".
+2023-09-26 09:53:17.696 +02:00 [Information] Executed ViewResult - view "CreateOrderQuestion" executed in 88.5415ms.
+2023-09-26 09:53:17.696 +02:00 [Information] Executed action "ITForums.Controllers.OrderController.CreateOrderQuestion (ITForums)" in 197.8299ms
+2023-09-26 09:53:17.696 +02:00 [Information] Executed endpoint '"ITForums.Controllers.OrderController.CreateOrderQuestion (ITForums)"'
+2023-09-26 09:53:17.698 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Order/CreateOrderQuestion - - - 200 - text/html;+charset=utf-8 202.7865ms
+2023-09-26 09:53:17.708 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Order/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 09:53:17.709 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Order/lib/jquery/jquery.js - -
+2023-09-26 09:53:17.709 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:17.709 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.6714ms
+2023-09-26 09:53:17.709 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Order/lib/jquery/jquery.js - - - 404 0 - 0.8647ms
+2023-09-26 09:53:17.710 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Order/lib/bootstrap/js/bootstrap.js - - - 404 0 - 1.1398ms
+2023-09-26 09:53:17.716 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:17.720 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.0072ms
+2023-09-26 09:53:26.537 +02:00 [Information] Request starting HTTP/2 POST https://localhost:7133/Order/CreateOrderQuestion application/x-www-form-urlencoded 259
+2023-09-26 09:53:26.538 +02:00 [Information] Executing endpoint '"ITForums.Controllers.OrderController.CreateOrderQuestion (ITForums)"'
+2023-09-26 09:53:26.560 +02:00 [Information] Route matched with "{action = \"CreateOrderQuestion\", controller = \"Order\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrderQuestion(ITForums.Models.OrderQuestion)" on controller "ITForums.Controllers.OrderController" ("ITForums").
+2023-09-26 09:53:26.615 +02:00 [Information] Executing action method "ITForums.Controllers.OrderController.CreateOrderQuestion (ITForums)" - Validation state: Invalid
+2023-09-26 09:53:26.671 +02:00 [Information] Executed action method "ITForums.Controllers.OrderController.CreateOrderQuestion (ITForums)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 55.7174ms.
+2023-09-26 09:53:26.671 +02:00 [Information] Executing RedirectResult, redirecting to "/Order/Table".
+2023-09-26 09:53:26.672 +02:00 [Information] Executed action "ITForums.Controllers.OrderController.CreateOrderQuestion (ITForums)" in 111.4511ms
+2023-09-26 09:53:26.672 +02:00 [Information] Executed endpoint '"ITForums.Controllers.OrderController.CreateOrderQuestion (ITForums)"'
+2023-09-26 09:53:26.672 +02:00 [Information] Request finished HTTP/2 POST https://localhost:7133/Order/CreateOrderQuestion application/x-www-form-urlencoded 259 - 302 0 - 134.6537ms
+2023-09-26 09:53:26.679 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Order/Table - -
+2023-09-26 09:53:26.679 +02:00 [Information] Executing endpoint '"ITForums.Controllers.OrderController.Table (ITForums)"'
+2023-09-26 09:53:26.679 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Order\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "ITForums.Controllers.OrderController" ("ITForums").
+2023-09-26 09:53:26.699 +02:00 [Information] Executing action method "ITForums.Controllers.OrderController.Table (ITForums)" - Validation state: Valid
+2023-09-26 09:53:26.703 +02:00 [Information] Executed action method "ITForums.Controllers.OrderController.Table (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 3.6845ms.
+2023-09-26 09:53:26.703 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-26 09:53:26.744 +02:00 [Information] Executed ViewResult - view "Table" executed in 41.0089ms.
+2023-09-26 09:53:26.745 +02:00 [Information] Executed action "ITForums.Controllers.OrderController.Table (ITForums)" in 65.1245ms
+2023-09-26 09:53:26.745 +02:00 [Information] Executed endpoint '"ITForums.Controllers.OrderController.Table (ITForums)"'
+2023-09-26 09:53:26.747 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Order/Table - - - 200 - text/html;+charset=utf-8 68.1623ms
+2023-09-26 09:53:26.757 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Order/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 09:53:26.758 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:26.758 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Order/lib/jquery/jquery.js - -
+2023-09-26 09:53:26.758 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.3353ms
+2023-09-26 09:53:26.758 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Order/lib/jquery/jquery.js - - - 404 0 - 0.5264ms
+2023-09-26 09:53:26.758 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Order/lib/bootstrap/js/bootstrap.js - - - 404 0 - 0.8483ms
+2023-09-26 09:53:26.765 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:26.768 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.2688ms
+2023-09-26 09:53:32.775 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Customer/Table - -
+2023-09-26 09:53:32.776 +02:00 [Information] Executing endpoint '"ITForums.Controllers.CustomerController.Table (ITForums)"'
+2023-09-26 09:53:32.779 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Customer\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "ITForums.Controllers.CustomerController" ("ITForums").
+2023-09-26 09:53:32.797 +02:00 [Information] Executing action method "ITForums.Controllers.CustomerController.Table (ITForums)" - Validation state: Valid
+2023-09-26 09:53:32.804 +02:00 [Information] Executed action method "ITForums.Controllers.CustomerController.Table (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 7.1962ms.
+2023-09-26 09:53:32.805 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-26 09:53:32.834 +02:00 [Information] Executed ViewResult - view "Table" executed in 29.204ms.
+2023-09-26 09:53:32.834 +02:00 [Information] Executed action "ITForums.Controllers.CustomerController.Table (ITForums)" in 54.6814ms
+2023-09-26 09:53:32.834 +02:00 [Information] Executed endpoint '"ITForums.Controllers.CustomerController.Table (ITForums)"'
+2023-09-26 09:53:32.835 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Customer/Table - - - 200 - text/html;+charset=utf-8 59.9753ms
+2023-09-26 09:53:32.841 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Customer/lib/jquery/jquery.js - -
+2023-09-26 09:53:32.841 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Customer/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 09:53:32.841 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:32.841 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Customer/lib/jquery/jquery.js - - - 404 0 - 0.9549ms
+2023-09-26 09:53:32.841 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.4576ms
+2023-09-26 09:53:32.841 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Customer/lib/bootstrap/js/bootstrap.js - - - 404 0 - 0.7452ms
+2023-09-26 09:53:32.848 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:32.853 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 5.1821ms
+2023-09-26 09:53:34.783 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/Table - -
+2023-09-26 09:53:34.785 +02:00 [Information] Executing endpoint '"ITForums.Controllers.QuestionController.Table (ITForums)"'
+2023-09-26 09:53:34.787 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Question\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "ITForums.Controllers.QuestionController" ("ITForums").
+2023-09-26 09:53:34.806 +02:00 [Information] Executing action method "ITForums.Controllers.QuestionController.Table (ITForums)" - Validation state: Valid
+2023-09-26 09:53:34.814 +02:00 [Information] Executed action method "ITForums.Controllers.QuestionController.Table (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 7.5856ms.
+2023-09-26 09:53:34.814 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-26 09:53:34.932 +02:00 [Information] Executed ViewResult - view "Table" executed in 117.7298ms.
+2023-09-26 09:53:34.932 +02:00 [Information] Executed action "ITForums.Controllers.QuestionController.Table (ITForums)" in 144.5434ms
+2023-09-26 09:53:34.932 +02:00 [Information] Executed endpoint '"ITForums.Controllers.QuestionController.Table (ITForums)"'
+2023-09-26 09:53:34.934 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/Table - - - 200 - text/html;+charset=utf-8 150.5671ms
+2023-09-26 09:53:34.946 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - -
+2023-09-26 09:53:34.946 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 09:53:34.948 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - - - 404 0 - 2.0500ms
+2023-09-26 09:53:34.948 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - - - 404 0 - 2.0689ms
+2023-09-26 09:53:34.956 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:34.956 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.3398ms
+2023-09-26 09:53:34.956 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:34.966 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 9.7508ms
+2023-09-26 09:53:37.815 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/Create - -
+2023-09-26 09:53:37.816 +02:00 [Information] Executing endpoint '"ITForums.Controllers.QuestionController.Create (ITForums)"'
+2023-09-26 09:53:37.817 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Question\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Create()" on controller "ITForums.Controllers.QuestionController" ("ITForums").
+2023-09-26 09:53:37.831 +02:00 [Information] Executing action method "ITForums.Controllers.QuestionController.Create (ITForums)" - Validation state: Valid
+2023-09-26 09:53:37.832 +02:00 [Information] Executed action method "ITForums.Controllers.QuestionController.Create (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.1834ms.
+2023-09-26 09:53:37.832 +02:00 [Information] Executing ViewResult, running view "Create".
+2023-09-26 09:53:37.855 +02:00 [Information] Executed ViewResult - view "Create" executed in 22.8997ms.
+2023-09-26 09:53:37.855 +02:00 [Information] Executed action "ITForums.Controllers.QuestionController.Create (ITForums)" in 37.7273ms
+2023-09-26 09:53:37.855 +02:00 [Information] Executed endpoint '"ITForums.Controllers.QuestionController.Create (ITForums)"'
+2023-09-26 09:53:37.856 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/Create - - - 200 - text/html;+charset=utf-8 41.4148ms
+2023-09-26 09:53:37.870 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 09:53:37.870 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:37.870 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - -
+2023-09-26 09:53:37.870 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.4457ms
+2023-09-26 09:53:37.870 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - - - 404 0 - 0.6300ms
+2023-09-26 09:53:37.871 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - - - 404 0 - 0.1976ms
+2023-09-26 09:53:37.877 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:37.888 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 10.6592ms
+2023-09-26 09:53:39.786 +02:00 [Information] Request starting HTTP/2 POST https://localhost:7133/Question/Create application/x-www-form-urlencoded 220
+2023-09-26 09:53:39.787 +02:00 [Information] Executing endpoint '"ITForums.Controllers.QuestionController.Create (ITForums)"'
+2023-09-26 09:53:39.790 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Question\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ITForums.Models.Question)" on controller "ITForums.Controllers.QuestionController" ("ITForums").
+2023-09-26 09:53:39.817 +02:00 [Information] Executing action method "ITForums.Controllers.QuestionController.Create (ITForums)" - Validation state: Invalid
+2023-09-26 09:53:39.836 +02:00 [Warning] [QuestionController] Question creation failed Question { Id: 0, Title: null, Description: null, ImageUrl: null, OrderQuestions: null, Answer: 0 }
+2023-09-26 09:53:39.837 +02:00 [Information] Executed action method "ITForums.Controllers.QuestionController.Create (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 19.8272ms.
+2023-09-26 09:53:39.837 +02:00 [Information] Executing ViewResult, running view "Create".
+2023-09-26 09:53:39.848 +02:00 [Information] Executed ViewResult - view "Create" executed in 11.2028ms.
+2023-09-26 09:53:39.848 +02:00 [Information] Executed action "ITForums.Controllers.QuestionController.Create (ITForums)" in 58.2115ms
+2023-09-26 09:53:39.848 +02:00 [Information] Executed endpoint '"ITForums.Controllers.QuestionController.Create (ITForums)"'
+2023-09-26 09:53:39.850 +02:00 [Information] Request finished HTTP/2 POST https://localhost:7133/Question/Create application/x-www-form-urlencoded 220 - 200 - text/html;+charset=utf-8 63.5270ms
+2023-09-26 09:53:39.863 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - -
+2023-09-26 09:53:39.863 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:39.863 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 09:53:39.863 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.4234ms
+2023-09-26 09:53:39.863 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - - - 404 0 - 0.6336ms
+2023-09-26 09:53:39.863 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - - - 404 0 - 0.7112ms
+2023-09-26 09:53:39.868 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:39.872 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 4.0489ms
+2023-09-26 09:53:47.498 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/ - -
+2023-09-26 09:53:47.499 +02:00 [Information] Executing endpoint '"ITForums.Controllers.HomeController.Index (ITForums)"'
+2023-09-26 09:53:47.499 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "ITForums.Controllers.HomeController" ("ITForums").
+2023-09-26 09:53:47.512 +02:00 [Information] Executing action method "ITForums.Controllers.HomeController.Index (ITForums)" - Validation state: Valid
+2023-09-26 09:53:47.512 +02:00 [Information] Executed action method "ITForums.Controllers.HomeController.Index (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0165ms.
+2023-09-26 09:53:47.513 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-26 09:53:47.521 +02:00 [Information] Executed ViewResult - view "Index" executed in 8.1478ms.
+2023-09-26 09:53:47.521 +02:00 [Information] Executed action "ITForums.Controllers.HomeController.Index (ITForums)" in 21.4912ms
+2023-09-26 09:53:47.521 +02:00 [Information] Executed endpoint '"ITForums.Controllers.HomeController.Index (ITForums)"'
+2023-09-26 09:53:47.522 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/ - - - 200 - text/html;+charset=utf-8 23.8132ms
+2023-09-26 09:53:47.541 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:47.541 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.2655ms
+2023-09-26 09:53:47.547 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:47.563 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.1397ms
+2023-09-26 09:53:48.222 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/Table - -
+2023-09-26 09:53:48.223 +02:00 [Information] Executing endpoint '"ITForums.Controllers.QuestionController.Table (ITForums)"'
+2023-09-26 09:53:48.223 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Question\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "ITForums.Controllers.QuestionController" ("ITForums").
+2023-09-26 09:53:48.240 +02:00 [Information] Executing action method "ITForums.Controllers.QuestionController.Table (ITForums)" - Validation state: Valid
+2023-09-26 09:53:48.244 +02:00 [Information] Executed action method "ITForums.Controllers.QuestionController.Table (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 4.4261ms.
+2023-09-26 09:53:48.244 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-26 09:53:48.250 +02:00 [Information] Executed ViewResult - view "Table" executed in 5.3551ms.
+2023-09-26 09:53:48.250 +02:00 [Information] Executed action "ITForums.Controllers.QuestionController.Table (ITForums)" in 26.2131ms
+2023-09-26 09:53:48.250 +02:00 [Information] Executed endpoint '"ITForums.Controllers.QuestionController.Table (ITForums)"'
+2023-09-26 09:53:48.252 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/Table - - - 200 - text/html;+charset=utf-8 30.0286ms
+2023-09-26 09:53:48.263 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 09:53:48.263 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - -
+2023-09-26 09:53:48.263 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - - - 404 0 - 0.4047ms
+2023-09-26 09:53:48.264 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - - - 404 0 - 0.9034ms
+2023-09-26 09:53:48.264 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:48.264 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.4841ms
+2023-09-26 09:53:48.271 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:48.276 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 5.4840ms
+2023-09-26 09:53:49.586 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/Grid - -
+2023-09-26 09:53:49.587 +02:00 [Information] Executing endpoint '"ITForums.Controllers.QuestionController.Grid (ITForums)"'
+2023-09-26 09:53:49.589 +02:00 [Information] Route matched with "{action = \"Grid\", controller = \"Question\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "ITForums.Controllers.QuestionController" ("ITForums").
+2023-09-26 09:53:49.608 +02:00 [Information] Executing action method "ITForums.Controllers.QuestionController.Grid (ITForums)" - Validation state: Valid
+2023-09-26 09:53:49.614 +02:00 [Information] Executed action method "ITForums.Controllers.QuestionController.Grid (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 5.6485ms.
+2023-09-26 09:53:49.615 +02:00 [Information] Executing ViewResult, running view "Grid".
+2023-09-26 09:53:49.632 +02:00 [Information] Executed ViewResult - view "Grid" executed in 17.4297ms.
+2023-09-26 09:53:49.632 +02:00 [Information] Executed action "ITForums.Controllers.QuestionController.Grid (ITForums)" in 42.6704ms
+2023-09-26 09:53:49.632 +02:00 [Information] Executed endpoint '"ITForums.Controllers.QuestionController.Grid (ITForums)"'
+2023-09-26 09:53:49.633 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/Grid - - - 200 - text/html;+charset=utf-8 47.3775ms
+2023-09-26 09:53:49.646 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - -
+2023-09-26 09:53:49.646 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:49.646 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 09:53:49.646 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.3050ms
+2023-09-26 09:53:49.646 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - - - 404 0 - 0.5479ms
+2023-09-26 09:53:49.646 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - - - 404 0 - 0.5614ms
+2023-09-26 09:53:49.654 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:49.658 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.9107ms
+2023-09-26 09:53:50.630 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/Table - -
+2023-09-26 09:53:50.631 +02:00 [Information] Executing endpoint '"ITForums.Controllers.QuestionController.Table (ITForums)"'
+2023-09-26 09:53:50.631 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Question\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "ITForums.Controllers.QuestionController" ("ITForums").
+2023-09-26 09:53:50.648 +02:00 [Information] Executing action method "ITForums.Controllers.QuestionController.Table (ITForums)" - Validation state: Valid
+2023-09-26 09:53:50.652 +02:00 [Information] Executed action method "ITForums.Controllers.QuestionController.Table (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 4.5093ms.
+2023-09-26 09:53:50.652 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-26 09:53:50.660 +02:00 [Information] Executed ViewResult - view "Table" executed in 7.2229ms.
+2023-09-26 09:53:50.660 +02:00 [Information] Executed action "ITForums.Controllers.QuestionController.Table (ITForums)" in 28.6211ms
+2023-09-26 09:53:50.660 +02:00 [Information] Executed endpoint '"ITForums.Controllers.QuestionController.Table (ITForums)"'
+2023-09-26 09:53:50.662 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/Table - - - 200 - text/html;+charset=utf-8 31.8124ms
+2023-09-26 09:53:50.672 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 09:53:50.672 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:50.672 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.7440ms
+2023-09-26 09:53:50.672 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - -
+2023-09-26 09:53:50.672 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - - - 404 0 - 0.7477ms
+2023-09-26 09:53:50.673 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - - - 404 0 - 1.0342ms
+2023-09-26 09:53:50.681 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:50.684 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.4889ms
+2023-09-26 09:53:53.014 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/Grid - -
+2023-09-26 09:53:53.015 +02:00 [Information] Executing endpoint '"ITForums.Controllers.QuestionController.Grid (ITForums)"'
+2023-09-26 09:53:53.015 +02:00 [Information] Route matched with "{action = \"Grid\", controller = \"Question\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Grid()" on controller "ITForums.Controllers.QuestionController" ("ITForums").
+2023-09-26 09:53:53.032 +02:00 [Information] Executing action method "ITForums.Controllers.QuestionController.Grid (ITForums)" - Validation state: Valid
+2023-09-26 09:53:53.037 +02:00 [Information] Executed action method "ITForums.Controllers.QuestionController.Grid (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 4.5257ms.
+2023-09-26 09:53:53.037 +02:00 [Information] Executing ViewResult, running view "Grid".
+2023-09-26 09:53:53.043 +02:00 [Information] Executed ViewResult - view "Grid" executed in 6.1691ms.
+2023-09-26 09:53:53.044 +02:00 [Information] Executed action "ITForums.Controllers.QuestionController.Grid (ITForums)" in 28.1689ms
+2023-09-26 09:53:53.044 +02:00 [Information] Executed endpoint '"ITForums.Controllers.QuestionController.Grid (ITForums)"'
+2023-09-26 09:53:53.045 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/Grid - - - 200 - text/html;+charset=utf-8 30.9080ms
+2023-09-26 09:53:53.056 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 09:53:53.056 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:53.057 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - -
+2023-09-26 09:53:53.057 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.9168ms
+2023-09-26 09:53:53.057 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - - - 404 0 - 0.9532ms
+2023-09-26 09:53:53.057 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - - - 404 0 - 0.5757ms
+2023-09-26 09:53:53.063 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:53.072 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.2379ms
+2023-09-26 09:53:54.282 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/Table - -
+2023-09-26 09:53:54.283 +02:00 [Information] Executing endpoint '"ITForums.Controllers.QuestionController.Table (ITForums)"'
+2023-09-26 09:53:54.283 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Question\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "ITForums.Controllers.QuestionController" ("ITForums").
+2023-09-26 09:53:54.302 +02:00 [Information] Executing action method "ITForums.Controllers.QuestionController.Table (ITForums)" - Validation state: Valid
+2023-09-26 09:53:54.307 +02:00 [Information] Executed action method "ITForums.Controllers.QuestionController.Table (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 4.9589ms.
+2023-09-26 09:53:54.307 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-26 09:53:54.314 +02:00 [Information] Executed ViewResult - view "Table" executed in 6.9591ms.
+2023-09-26 09:53:54.314 +02:00 [Information] Executed action "ITForums.Controllers.QuestionController.Table (ITForums)" in 31.1008ms
+2023-09-26 09:53:54.314 +02:00 [Information] Executed endpoint '"ITForums.Controllers.QuestionController.Table (ITForums)"'
+2023-09-26 09:53:54.316 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/Table - - - 200 - text/html;+charset=utf-8 33.8924ms
+2023-09-26 09:53:54.326 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 09:53:54.327 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - - - 404 0 - 0.3646ms
+2023-09-26 09:53:54.328 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 09:53:54.328 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - -
+2023-09-26 09:53:54.328 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.3605ms
+2023-09-26 09:53:54.328 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - - - 404 0 - 0.5845ms
+2023-09-26 09:53:54.335 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 09:53:54.343 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 8.2697ms

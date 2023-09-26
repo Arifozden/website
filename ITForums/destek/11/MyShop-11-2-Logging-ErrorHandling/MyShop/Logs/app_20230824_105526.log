@@ -1,0 +1,100 @@
+2023-08-24 10:55:27.073 +02:00 [Information] User profile is available. Using '"/Users/baifanz/.aspnet/DataProtection-Keys"' as key repository; keys will not be encrypted at rest.
+2023-08-24 10:55:27.309 +02:00 [Information] Now listening on: "https://localhost:7205"
+2023-08-24 10:55:27.309 +02:00 [Information] Now listening on: "http://localhost:5112"
+2023-08-24 10:55:27.312 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-08-24 10:55:27.312 +02:00 [Information] Hosting environment: "Development"
+2023-08-24 10:55:27.313 +02:00 [Information] Content root path: "/Users/baifanz/Projects/ITPE32-23H/6-Logging/MyShop-11-Logging-ErrorHandling/MyShop"
+2023-08-24 10:55:28.570 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/ - -
+2023-08-24 10:55:28.582 +02:00 [Information] Executing endpoint '"MyShop.Controllers.HomeController.Index (MyShop)"'
+2023-08-24 10:55:28.586 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "MyShop.Controllers.HomeController" ("MyShop").
+2023-08-24 10:55:28.589 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-08-24 10:55:28.625 +02:00 [Information] Executed ViewResult - view "Index" executed in 35.7738ms.
+2023-08-24 10:55:28.625 +02:00 [Information] Executed action "MyShop.Controllers.HomeController.Index (MyShop)" in 39.4059ms
+2023-08-24 10:55:28.625 +02:00 [Information] Executed endpoint '"MyShop.Controllers.HomeController.Index (MyShop)"'
+2023-08-24 10:55:28.627 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/ - - - 200 - text/html;+charset=utf-8 57.6593ms
+2023-08-24 10:55:28.657 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - -
+2023-08-24 10:55:28.659 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - -
+2023-08-24 10:55:28.785 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/pizza.jpg - -
+2023-08-24 10:55:28.785 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/fishandchips.jpg - -
+2023-08-24 10:55:28.871 +02:00 [Information] Sending file. Request path: '"/images/pizza.jpg"'. Physical path: '"/Users/baifanz/Projects/ITPE32-23H/6-Logging/MyShop-11-Logging-ErrorHandling/MyShop/wwwroot/images/pizza.jpg"'
+2023-08-24 10:55:28.871 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/js/bootstrap.js"'. Physical path: '"/Users/baifanz/Projects/ITPE32-23H/6-Logging/MyShop-11-Logging-ErrorHandling/MyShop/wwwroot/lib/bootstrap/js/bootstrap.js"'
+2023-08-24 10:55:28.871 +02:00 [Information] Sending file. Request path: '"/images/fishandchips.jpg"'. Physical path: '"/Users/baifanz/Projects/ITPE32-23H/6-Logging/MyShop-11-Logging-ErrorHandling/MyShop/wwwroot/images/fishandchips.jpg"'
+2023-08-24 10:55:28.871 +02:00 [Information] Sending file. Request path: '"/lib/jquery/jquery.js"'. Physical path: '"/Users/baifanz/Projects/ITPE32-23H/6-Logging/MyShop-11-Logging-ErrorHandling/MyShop/wwwroot/lib/jquery/jquery.js"'
+2023-08-24 10:55:28.872 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/bootstrap/js/bootstrap.js - - - 200 145302 text/javascript 213.4035ms
+2023-08-24 10:55:28.872 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/lib/jquery/jquery.js - - - 200 284996 text/javascript 214.6497ms
+2023-08-24 10:55:28.872 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/pizza.jpg - - - 200 127421 image/jpeg 86.6495ms
+2023-08-24 10:55:28.872 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/fishandchips.jpg - - - 200 100023 image/jpeg 86.6174ms
+2023-08-24 10:55:28.896 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/tacos.jpg - -
+2023-08-24 10:55:28.901 +02:00 [Information] Sending file. Request path: '"/images/tacos.jpg"'. Physical path: '"/Users/baifanz/Projects/ITPE32-23H/6-Logging/MyShop-11-Logging-ErrorHandling/MyShop/wwwroot/images/tacos.jpg"'
+2023-08-24 10:55:28.902 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/tacos.jpg - - - 200 118763 image/jpeg 5.3403ms
+2023-08-24 10:55:28.921 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/favicon.ico - -
+2023-08-24 10:55:28.922 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/favicon.ico - - - 404 0 - 0.5415ms
+2023-08-24 10:55:31.304 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Item/Table - -
+2023-08-24 10:55:31.305 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Table (MyShop)"'
+2023-08-24 10:55:31.312 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "MyShop.Controllers.ItemController" ("MyShop").
+2023-08-24 10:55:31.369 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-08-24 10:55:31.377 +02:00 [Information] Executed ViewResult - view "Table" executed in 8.2917ms.
+2023-08-24 10:55:31.377 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Table (MyShop)" in 65.3597ms
+2023-08-24 10:55:31.377 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Table (MyShop)"'
+2023-08-24 10:55:31.379 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Item/Table - - - 200 - text/html;+charset=utf-8 75.6445ms
+2023-08-24 10:55:31.392 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/chickenleg.jpg - -
+2023-08-24 10:55:31.392 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/frenchfries.jpg - -
+2023-08-24 10:55:31.489 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/cider.jpg - -
+2023-08-24 10:55:31.489 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/ribs.jpg - -
+2023-08-24 10:55:31.514 +02:00 [Information] Sending file. Request path: '"/images/cider.jpg"'. Physical path: '"/Users/baifanz/Projects/ITPE32-23H/6-Logging/MyShop-11-Logging-ErrorHandling/MyShop/wwwroot/images/cider.jpg"'
+2023-08-24 10:55:31.514 +02:00 [Information] Sending file. Request path: '"/images/chickenleg.jpg"'. Physical path: '"/Users/baifanz/Projects/ITPE32-23H/6-Logging/MyShop-11-Logging-ErrorHandling/MyShop/wwwroot/images/chickenleg.jpg"'
+2023-08-24 10:55:31.514 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/chickenleg.jpg - - - 200 63434 image/jpeg 122.8326ms
+2023-08-24 10:55:31.514 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/cider.jpg - - - 200 28236 image/jpeg 25.2636ms
+2023-08-24 10:55:31.563 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/images/coke.jpg - -
+2023-08-24 10:55:31.564 +02:00 [Information] Sending file. Request path: '"/images/frenchfries.jpg"'. Physical path: '"/Users/baifanz/Projects/ITPE32-23H/6-Logging/MyShop-11-Logging-ErrorHandling/MyShop/wwwroot/images/frenchfries.jpg"'
+2023-08-24 10:55:31.566 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/frenchfries.jpg - - - 200 52799 image/jpeg 173.0328ms
+2023-08-24 10:55:31.566 +02:00 [Information] Sending file. Request path: '"/images/coke.jpg"'. Physical path: '"/Users/baifanz/Projects/ITPE32-23H/6-Logging/MyShop-11-Logging-ErrorHandling/MyShop/wwwroot/images/coke.jpg"'
+2023-08-24 10:55:31.567 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/coke.jpg - - - 200 40331 image/jpeg 3.8454ms
+2023-08-24 10:55:31.572 +02:00 [Information] Sending file. Request path: '"/images/ribs.jpg"'. Physical path: '"/Users/baifanz/Projects/ITPE32-23H/6-Logging/MyShop-11-Logging-ErrorHandling/MyShop/wwwroot/images/ribs.jpg"'
+2023-08-24 10:55:31.573 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/images/ribs.jpg - - - 200 141554 image/jpeg 104.2694ms
+2023-08-24 10:55:33.297 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Item/Delete/1 - -
+2023-08-24 10:55:33.299 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Delete (MyShop)"'
+2023-08-24 10:55:33.316 +02:00 [Information] Route matched with "{action = \"Delete\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32)" on controller "MyShop.Controllers.ItemController" ("MyShop").
+2023-08-24 10:55:33.374 +02:00 [Information] Executing ViewResult, running view "Delete".
+2023-08-24 10:55:33.381 +02:00 [Information] Executed ViewResult - view "Delete" executed in 7.5719ms.
+2023-08-24 10:55:33.382 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Delete (MyShop)" in 65.6562ms
+2023-08-24 10:55:33.382 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Delete (MyShop)"'
+2023-08-24 10:55:33.382 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Item/Delete/1 - - - 200 - text/html;+charset=utf-8 84.6620ms
+2023-08-24 10:55:34.547 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:7205/Item/DeleteConfirmed/1 application/x-www-form-urlencoded 182
+2023-08-24 10:55:34.547 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.DeleteConfirmed (MyShop)"'
+2023-08-24 10:55:34.554 +02:00 [Information] Route matched with "{action = \"DeleteConfirmed\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteConfirmed(Int32)" on controller "MyShop.Controllers.ItemController" ("MyShop").
+2023-08-24 10:55:34.604 +02:00 [Information] Executing RedirectResult, redirecting to "/Item/Table".
+2023-08-24 10:55:34.604 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.DeleteConfirmed (MyShop)" in 50.2498ms
+2023-08-24 10:55:34.604 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.DeleteConfirmed (MyShop)"'
+2023-08-24 10:55:34.604 +02:00 [Information] Request finished HTTP/1.1 POST https://localhost:7205/Item/DeleteConfirmed/1 application/x-www-form-urlencoded 182 - 302 0 - 57.2164ms
+2023-08-24 10:55:34.607 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Item/Table - -
+2023-08-24 10:55:34.607 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Table (MyShop)"'
+2023-08-24 10:55:34.607 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "MyShop.Controllers.ItemController" ("MyShop").
+2023-08-24 10:55:34.609 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-08-24 10:55:34.611 +02:00 [Information] Executed ViewResult - view "Table" executed in 1.1422ms.
+2023-08-24 10:55:34.611 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Table (MyShop)" in 3.1415ms
+2023-08-24 10:55:34.611 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Table (MyShop)"'
+2023-08-24 10:55:34.611 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Item/Table - - - 200 - text/html;+charset=utf-8 3.6034ms
+2023-08-24 10:55:36.467 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Item/Delete/2 - -
+2023-08-24 10:55:36.468 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Delete (MyShop)"'
+2023-08-24 10:55:36.468 +02:00 [Information] Route matched with "{action = \"Delete\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32)" on controller "MyShop.Controllers.ItemController" ("MyShop").
+2023-08-24 10:55:36.472 +02:00 [Information] Executing ViewResult, running view "Delete".
+2023-08-24 10:55:36.477 +02:00 [Information] Executed ViewResult - view "Delete" executed in 5.1602ms.
+2023-08-24 10:55:36.477 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Delete (MyShop)" in 9.7527ms
+2023-08-24 10:55:36.478 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Delete (MyShop)"'
+2023-08-24 10:55:36.478 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Item/Delete/2 - - - 200 - text/html;+charset=utf-8 10.4585ms
+2023-08-24 10:55:37.376 +02:00 [Information] Request starting HTTP/1.1 POST https://localhost:7205/Item/DeleteConfirmed/2 application/x-www-form-urlencoded 182
+2023-08-24 10:55:37.376 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.DeleteConfirmed (MyShop)"'
+2023-08-24 10:55:37.376 +02:00 [Information] Route matched with "{action = \"DeleteConfirmed\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DeleteConfirmed(Int32)" on controller "MyShop.Controllers.ItemController" ("MyShop").
+2023-08-24 10:55:37.384 +02:00 [Information] Executing RedirectResult, redirecting to "/Item/Table".
+2023-08-24 10:55:37.384 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.DeleteConfirmed (MyShop)" in 7.6151ms
+2023-08-24 10:55:37.384 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.DeleteConfirmed (MyShop)"'
+2023-08-24 10:55:37.384 +02:00 [Information] Request finished HTTP/1.1 POST https://localhost:7205/Item/DeleteConfirmed/2 application/x-www-form-urlencoded 182 - 302 0 - 8.3205ms
+2023-08-24 10:55:37.387 +02:00 [Information] Request starting HTTP/1.1 GET https://localhost:7205/Item/Table - -
+2023-08-24 10:55:37.388 +02:00 [Information] Executing endpoint '"MyShop.Controllers.ItemController.Table (MyShop)"'
+2023-08-24 10:55:37.388 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Item\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "MyShop.Controllers.ItemController" ("MyShop").
+2023-08-24 10:55:37.392 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-08-24 10:55:37.394 +02:00 [Information] Executed ViewResult - view "Table" executed in 2.3612ms.
+2023-08-24 10:55:37.394 +02:00 [Information] Executed action "MyShop.Controllers.ItemController.Table (MyShop)" in 6.443ms
+2023-08-24 10:55:37.394 +02:00 [Information] Executed endpoint '"MyShop.Controllers.ItemController.Table (MyShop)"'
+2023-08-24 10:55:37.395 +02:00 [Information] Request finished HTTP/1.1 GET https://localhost:7205/Item/Table - - - 200 - text/html;+charset=utf-8 7.0339ms

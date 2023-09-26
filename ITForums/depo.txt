@@ -24,6 +24,16 @@
             return questions;
         }
 
+--------------------
+Logger før endring
+
+_logger.LogInformation("This is an information message.");
+_logger.LogWarning("This is a warning message.");
+_logger.LogError("This is an error message.");
+
+--------------------
+
+
         
             
         

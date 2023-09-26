@@ -1,0 +1,93 @@
+2023-09-26 10:30:13.817 +02:00 [Information] User profile is available. Using '"C:\Users\arifo\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-09-26 10:30:13.992 +02:00 [Information] Now listening on: "https://localhost:7133"
+2023-09-26 10:30:13.994 +02:00 [Information] Now listening on: "http://localhost:5244"
+2023-09-26 10:30:14.001 +02:00 [Information] Application started. Press Ctrl+C to shut down.
+2023-09-26 10:30:14.004 +02:00 [Information] Hosting environment: "Development"
+2023-09-26 10:30:14.006 +02:00 [Information] Content root path: "C:\website\ITForums\ITForums\"
+2023-09-26 10:30:14.584 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/ - -
+2023-09-26 10:30:14.657 +02:00 [Information] Executing endpoint '"ITForums.Controllers.HomeController.Index (ITForums)"'
+2023-09-26 10:30:14.678 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Index()" on controller "ITForums.Controllers.HomeController" ("ITForums").
+2023-09-26 10:30:14.731 +02:00 [Information] Executing action method "ITForums.Controllers.HomeController.Index (ITForums)" - Validation state: Valid
+2023-09-26 10:30:14.737 +02:00 [Information] Executed action method "ITForums.Controllers.HomeController.Index (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.5397ms.
+2023-09-26 10:30:14.745 +02:00 [Information] Executing ViewResult, running view "Index".
+2023-09-26 10:30:14.938 +02:00 [Information] Executed ViewResult - view "Index" executed in 193.8265ms.
+2023-09-26 10:30:14.944 +02:00 [Information] Executed action "ITForums.Controllers.HomeController.Index (ITForums)" in 264.5567ms
+2023-09-26 10:30:14.944 +02:00 [Information] Executed endpoint '"ITForums.Controllers.HomeController.Index (ITForums)"'
+2023-09-26 10:30:14.983 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/ - - - 200 - text/html;+charset=utf-8 406.8754ms
+2023-09-26 10:30:14.986 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2023-09-26 10:30:14.986 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/lib/jquery-validate/jquery.validate.js - -
+2023-09-26 10:30:15.019 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 10:30:15.024 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 4.6295ms
+2023-09-26 10:30:15.046 +02:00 [Information] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"C:\website\ITForums\ITForums\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"'
+2023-09-26 10:30:15.046 +02:00 [Information] Sending file. Request path: '"/lib/jquery-validate/jquery.validate.js"'. Physical path: '"C:\website\ITForums\ITForums\wwwroot\lib\jquery-validate\jquery.validate.js"'
+2023-09-26 10:30:15.046 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 200 19820 application/javascript 59.8704ms
+2023-09-26 10:30:15.046 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/lib/jquery-validate/jquery.validate.js - - - 200 51171 application/javascript 59.8964ms
+2023-09-26 10:30:15.049 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 10:30:15.062 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.0818ms
+2023-09-26 10:30:17.291 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/Table - -
+2023-09-26 10:30:17.293 +02:00 [Information] Executing endpoint '"ITForums.Controllers.QuestionController.Table (ITForums)"'
+2023-09-26 10:30:17.296 +02:00 [Information] Route matched with "{action = \"Table\", controller = \"Question\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Table()" on controller "ITForums.Controllers.QuestionController" ("ITForums").
+2023-09-26 10:30:17.332 +02:00 [Information] Executing action method "ITForums.Controllers.QuestionController.Table (ITForums)" - Validation state: Valid
+2023-09-26 10:30:17.398 +02:00 [Information] Executed action method "ITForums.Controllers.QuestionController.Table (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 66.6234ms.
+2023-09-26 10:30:17.399 +02:00 [Information] Executing ViewResult, running view "Table".
+2023-09-26 10:30:17.477 +02:00 [Information] Executed ViewResult - view "Table" executed in 78.0029ms.
+2023-09-26 10:30:17.477 +02:00 [Information] Executed action "ITForums.Controllers.QuestionController.Table (ITForums)" in 180.5882ms
+2023-09-26 10:30:17.477 +02:00 [Information] Executed endpoint '"ITForums.Controllers.QuestionController.Table (ITForums)"'
+2023-09-26 10:30:17.487 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery-validate/jquery.validate.js - -
+2023-09-26 10:30:17.487 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 10:30:17.487 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2023-09-26 10:30:17.487 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - -
+2023-09-26 10:30:17.488 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 10:30:17.488 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.6348ms
+2023-09-26 10:30:17.489 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 404 0 - 2.7397ms
+2023-09-26 10:30:17.489 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery-validate/jquery.validate.js - - - 404 0 - 3.0471ms
+2023-09-26 10:30:17.490 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - - - 404 0 - 3.0297ms
+2023-09-26 10:30:17.490 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - - - 404 0 - 2.4536ms
+2023-09-26 10:30:17.495 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 10:30:17.496 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/Table - - - 200 - text/html;+charset=utf-8 204.7230ms
+2023-09-26 10:30:17.507 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 12.2280ms
+2023-09-26 10:30:18.730 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/Create - -
+2023-09-26 10:30:18.731 +02:00 [Information] Executing endpoint '"ITForums.Controllers.QuestionController.Create (ITForums)"'
+2023-09-26 10:30:18.732 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Question\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Create()" on controller "ITForums.Controllers.QuestionController" ("ITForums").
+2023-09-26 10:30:18.792 +02:00 [Information] Executing action method "ITForums.Controllers.QuestionController.Create (ITForums)" - Validation state: Valid
+2023-09-26 10:30:18.792 +02:00 [Information] Executed action method "ITForums.Controllers.QuestionController.Create (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.1748ms.
+2023-09-26 10:30:18.793 +02:00 [Information] Executing ViewResult, running view "Create".
+2023-09-26 10:30:18.839 +02:00 [Information] Executed ViewResult - view "Create" executed in 46.7609ms.
+2023-09-26 10:30:18.840 +02:00 [Information] Executed action "ITForums.Controllers.QuestionController.Create (ITForums)" in 107.8457ms
+2023-09-26 10:30:18.840 +02:00 [Information] Executed endpoint '"ITForums.Controllers.QuestionController.Create (ITForums)"'
+2023-09-26 10:30:18.841 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/Create - - - 200 - text/html;+charset=utf-8 110.9312ms
+2023-09-26 10:30:18.854 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 10:30:18.855 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - -
+2023-09-26 10:30:18.855 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2023-09-26 10:30:18.855 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery-validate/jquery.validate.js - -
+2023-09-26 10:30:18.855 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 10:30:18.855 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 404 0 - 0.4754ms
+2023-09-26 10:30:18.855 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - - - 404 0 - 0.7072ms
+2023-09-26 10:30:18.855 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - - - 404 0 - 1.0653ms
+2023-09-26 10:30:18.855 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.3578ms
+2023-09-26 10:30:18.855 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery-validate/jquery.validate.js - - - 404 0 - 0.6053ms
+2023-09-26 10:30:18.861 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 10:30:18.865 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.8520ms
+2023-09-26 10:30:19.744 +02:00 [Information] Request starting HTTP/2 POST https://localhost:7133/Question/Create application/x-www-form-urlencoded 220
+2023-09-26 10:30:19.745 +02:00 [Information] Executing endpoint '"ITForums.Controllers.QuestionController.Create (ITForums)"'
+2023-09-26 10:30:19.760 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Question\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(ITForums.Models.Question)" on controller "ITForums.Controllers.QuestionController" ("ITForums").
+2023-09-26 10:30:19.807 +02:00 [Information] Executing action method "ITForums.Controllers.QuestionController.Create (ITForums)" - Validation state: Invalid
+2023-09-26 10:30:19.823 +02:00 [Warning] [QuestionController] Question creation failed Question { Id: 0, Title: null, Description: null, ImageUrl: null, OrderQuestions: null, Answer: 0 }
+2023-09-26 10:30:19.824 +02:00 [Information] Executed action method "ITForums.Controllers.QuestionController.Create (ITForums)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 16.5971ms.
+2023-09-26 10:30:19.824 +02:00 [Information] Executing ViewResult, running view "Create".
+2023-09-26 10:30:19.838 +02:00 [Information] Executed ViewResult - view "Create" executed in 14.0303ms.
+2023-09-26 10:30:19.838 +02:00 [Information] Executed action "ITForums.Controllers.QuestionController.Create (ITForums)" in 77.3853ms
+2023-09-26 10:30:19.838 +02:00 [Information] Executed endpoint '"ITForums.Controllers.QuestionController.Create (ITForums)"'
+2023-09-26 10:30:19.840 +02:00 [Information] Request finished HTTP/2 POST https://localhost:7133/Question/Create application/x-www-form-urlencoded 220 - 200 - text/html;+charset=utf-8 96.2944ms
+2023-09-26 10:30:19.844 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - -
+2023-09-26 10:30:19.844 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - -
+2023-09-26 10:30:19.845 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - -
+2023-09-26 10:30:19.845 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/Question/lib/jquery-validate/jquery.validate.js - -
+2023-09-26 10:30:19.845 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - -
+2023-09-26 10:30:19.845 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/bootstrap/js/bootstrap.js - - - 404 0 - 0.7811ms
+2023-09-26 10:30:19.845 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js - - - 404 0 - 0.6522ms
+2023-09-26 10:30:19.845 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery/jquery.js - - - 404 0 - 0.8945ms
+2023-09-26 10:30:19.845 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/Question/lib/jquery-validate/jquery.validate.js - - - 404 0 - 0.6384ms
+2023-09-26 10:30:19.845 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_framework/aspnetcore-browser-refresh.js - - - 200 12348 application/javascript;+charset=utf-8 0.4832ms
+2023-09-26 10:30:19.853 +02:00 [Information] Request starting HTTP/2 GET https://localhost:7133/_vs/browserLink - -
+2023-09-26 10:30:19.857 +02:00 [Information] Request finished HTTP/2 GET https://localhost:7133/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 3.3614ms

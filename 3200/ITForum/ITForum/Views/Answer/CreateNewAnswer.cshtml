@@ -1,0 +1,23 @@
+﻿@model OrderItem
+
+<h2>Create New Answer</h2>
+
+<form asp-action="CreateNewAnswer">
+    <div class="form-group">
+        <label asp-for="OrderItem.QuestionId"></label><span class="text-danger">*</span>
+        <select asp-for=""></select>
+        <span asp-validation-for="QuestionId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AntallAnswer"></label><span class="text-danger">*</span>
+        <input asp-for="AntallAnswer" class="form-control" />
+        <span asp-validation-for="AntallAnswer" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AnswerId"></label><span class="text-danger">*</span>
+        <input asp-for="AnswerId" class="form-control" />
+        <span asp-validation-for="AnswerId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-action="Table" class="btn btn-secondary">Back to Answer Table</a>
+</form>

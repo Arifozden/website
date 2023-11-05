@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Answer>
+<div>
+    @foreach (var answer in Model)
+    {
+        <h2>@answer.Quest.QuestId</h2>
+        <h4>@answer.AnswerContent</h4>
+    }
+</div>

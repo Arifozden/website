@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Answer>
+
+<h1>List of Answers</h1>
+
+@foreach (var answer in Model)
+{
+    <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 20px;">
+        <div class="container">
+            <h5>Order @answer.AnswerId </h5>
+            <div>
+                <table class='table table-striped' style='max-width: 1200px;'>
+                    <tr class="table-header">
+                        <th>Answer Date</th>
+                        <th>UserId</th>
+                        <th>Antall Ord</th>
+                    </tr>
+                    <tr>
+                        <td>@answer.AnswerDate</td>
+                        <td>@answer.UserId</td>
+                        <td>@answer.AntallOrd</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <partial name="_OrderItemTable" model="answer.OrderItems" />
+    </div>
+}
+
+<p>
+    <a class="btn btn-secondary" asp-controller="Answer" asp-action="CreateNewAnswer">Create New Answer</a>
+</p>

@@ -1,0 +1,32 @@
+﻿<form class="d-flex" role="search">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-primary" type="submit">Search</button>
+</form>
+
+<ul class="navbar-nav my-2 my-lg-0">
+    
+    @if (Request.IsAuthenticated)
+    {
+        //kullanici adini ve logout linklerini cikar
+        <li class="nav-item active">
+            <a class="nav-link" href="/Account">@User.Identity.Name</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="/Account/Logout">Log ut <span class="sr-only">(current)</span></a>
+        </li>
+    }
+    else
+    {
+        //login ve register linklerini cikar
+        <li class="nav-item active">
+            <a class="nav-link" href="/Account/Login">Logg inn</a>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="/Account/Register">Registrer</a>
+        </li>
+    }
+
+    
+
+</ul>

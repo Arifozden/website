@@ -1,0 +1,87 @@
+//public IActionResult Question()
+//{
+//    var questions = GetQuestions();
+//    var questionListViewModel = new QuestionListViewModel(questions, "Question");
+//    return View(questionListViewModel);
+//}
+
+//public IActionResult QuestionGrid()
+//{
+//    var questions = GetQuestions();
+//    var questionListViewModel = new QuestionListViewModel(questions, "QuestionGrid");
+//    return View(questionListViewModel);
+//}
+
+//public IActionResult Details(int id)
+//{
+//    var questions = GetQuestions();
+//    var question = questions.FirstOrDefault(i => i.QuestionId == id);
+//    if (question == null)
+//        return NotFound();
+//    return View(question);
+//}
+
+//public IActionResult Question()
+//{
+//    var questions = GetQuestions();
+//    ViewBag.CurrentViewName = "Table";
+//    return View(questions);
+//}
+
+//public IActionResult QuestionGrid()
+//{
+//    var questions = GetQuestions();
+//    ViewBag.CurrentViewName = "Grid";
+//    return View(questions);
+//}
+
+
+
+        public List<Question> GetQuestions()
+        {
+            var questions = new List<Question>();
+            var question1 = new Question
+            {
+                QuestionId = 1,
+                Title = "Soru 1",
+                Description = "icerik 1",
+                AuthorId = 1,
+                Author = "yazar 1",
+                Answers = "cevaplar 1"
+            };
+
+            var question2 = new Question
+            {
+                QuestionId = 2,
+                Title = "Soru 2",
+                Description = "icerik 2",
+                AuthorId = 1,
+                Author = "yazar 1",
+                Answers = "cevaplar 2"
+            };
+
+            var question3 = new Question
+            {
+                QuestionId = 3,
+                Title = "Soru 3",
+                Description = "icerik 3",
+                AuthorId = 2,
+                Author = "yazar 2",
+                Answers = "cevaplar 3"
+            };
+
+            var question4 = new Question
+            {
+                QuestionId = 4,
+                Title = "Soru 4",
+                Description = "icerik 4",
+                AuthorId = 2,
+                Author = "yazar 2",
+                Answers = "cevaplar 4"
+            };
+            questions.Add(question1);
+            questions.Add(question2);
+            questions.Add(question3);
+            questions.Add(question4);
+            return questions;
+        }

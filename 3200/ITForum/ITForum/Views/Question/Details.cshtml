@@ -1,0 +1,18 @@
+﻿@model Question
+
+<h3 class="my-5">
+    @Model.Title
+</h3>
+
+<div class="row gx-5">
+    <h3 class="my-5">
+        @Model.Title
+    </h3>
+    <div class="col-7">
+        <h5>@Model.Description</h5>
+        <h3 class="pull-right">@Model.Author</h3>
+        <div><h5>@Model.Answers</h5></div>
+        <p><a href="/Question/Question">Back to Table View</a></p>
+        <p><a href="/Question/QuestionGrid">Back to Grid View</a></p>
+    </div>
+</div>

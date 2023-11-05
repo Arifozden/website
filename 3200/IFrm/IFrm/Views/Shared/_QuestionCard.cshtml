@@ -1,0 +1,19 @@
+﻿@model Question
+
+<div style="display: flex">
+<div>
+    <h6>@Model.Id</h6>
+    <h2>
+        <a asp-controller="Question"
+           asp-action="Details"
+           asp-route-id="@Model.Id">@Model.Title</a>
+    </h2>
+    <h3>@Model.Description</h3>
+    <h4>@Model.User</h4>
+    <hr/>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a>
+    <a asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+</div>
+</div>

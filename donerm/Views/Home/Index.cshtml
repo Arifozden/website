@@ -1,0 +1,23 @@
+﻿@using DonerSD.Models;
+@model IEnumerable<ProductModel>
+@{
+    ViewBag.Title = "Index";
+}
+<div class="jumbotron">
+    <div class="container">
+        <h1 class="display-3 fw-bold">DonerMeg.no</h1>
+        <p class="lead">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
+        <hr class="my-4" />
+        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+    </div>
+</div>
+
+<div class="container pb-5">
+    @Html.Partial("_ProductList", Model)
+</div>
+
+
+
+
+
+

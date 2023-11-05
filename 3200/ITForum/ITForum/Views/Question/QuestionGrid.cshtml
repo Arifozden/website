@@ -1,0 +1,15 @@
+﻿@model QuestionListViewModel
+
+<h1>List of Questions (@ViewBag.CurrentViewName View)</h1>
+<a href="/Question/Question">Questions in Table View</a>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var question in Model.Questions)
+    {
+        <partial name="_QuestionCard" model="question"/>
+    }
+</div>
+<hr/>
+<p>
+    <a class="btn btn-secondary" asp-controller="Question" asp-action="Create">Ask New Question</a>
+</p>

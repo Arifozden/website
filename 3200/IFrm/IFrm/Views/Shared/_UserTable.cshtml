@@ -1,0 +1,28 @@
+﻿@model IEnumerable<User>
+
+<div class="container">
+    <table class='table table-striped'>
+        <tr>
+            <th>UserId</th>
+            <th>UserName</th>
+            <th>Email</th>
+            <th>Questions</th>
+            <th>Actions</th>
+        </tr>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.UserId</td>
+                <td>@user.UserName</td>
+                <td>@user.Email</td>
+                <td>
+                    @if (@user.Quests != null)
+                    {
+                        <p>@string.Join(", ", @user.Quests.Select(quest => $"Quest{quest.QuestId}"))</p>
+                    }
+                </td>
+                <td></td>
+            </tr>
+        }
+    </table>
+</div>

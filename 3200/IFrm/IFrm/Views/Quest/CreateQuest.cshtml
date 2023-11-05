@@ -1,0 +1,23 @@
+﻿@model Quest
+
+<h2>Ask New Question</h2>
+
+<form asp-action="CreateQuest">
+    <div class="form-group">
+        <label asp-for="QuestTitle"></label><span class="text-danger">*</span>
+        <input asp-for="QuestTitle" class="form-control" />
+        <span asp-validation-for="QuestTitle" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="QuestDescription"></label>
+        <input asp-for="QuestDescription" class="form-control" />
+        <span asp-validation-for="QuestDescription" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="User.UserName"></label>
+        <input asp-for="User.UserName" class="form-control" />
+        <span asp-validation-for="User.UserName" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Ask</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to Quests</a>
+</form>

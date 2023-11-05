@@ -1,0 +1,30 @@
+﻿@model Question
+
+<div class="container">
+    <div class="col-12">
+        <h4 class="text-start">
+            <a asp-controller="Question"
+               asp-action="Details"
+               asp-route-id="@Model.QuestionId">@Model.Title</a>
+        </h4>
+        <div>
+            <div class="d-flex justify-content-between mt-2">
+                <h5 class="text-start">
+                    <a asp-controller="Question"
+                       asp-action="Details"
+                       asp-route-id="@Model.QuestionId">@Model.Title</a>
+                </h5>
+                <h5 class="text-nowrap">
+                    @Model.Description
+                </h5>
+                <h5 class="text-nowrap">
+                    @Model.Author
+                </h5>
+                <h5 class="text-nowrap">
+                    @Model.Answers
+                </h5>
+                        
+            </div>
+        </div>
+    </div>
+</div>

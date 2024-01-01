@@ -1,0 +1,53 @@
+<div class="container">
+    <h2>Edit Student</h2>
+    <div class="row">
+        <div class="col-6">
+    <form #form="ngForm" (ngSubmit)="editStudent()">
+    <table>
+        <tr>
+            <td><input type="hidden" class="form-control bg-light" id="id" name="id" readonly [(ngModel)]="editStudentRequest.id"></td>
+        </tr>
+        <tr>
+            <td><label for="name" class="form-label">Student Name</label></td>
+            <td><input type="text" class="form-control" id="name" name="name" [(ngModel)]="editStudentRequest.name"></td>
+        </tr>
+        <tr>
+            <td><label for="surname" class="form-label">Student Surname</label></td>
+            <td><input type="text" class="form-control" id="surname" name="surname" [(ngModel)]="editStudentRequest.surname"></td>
+        </tr>
+        <tr>
+            <td><label for="studNumber" class="form-label">Student Number</label></td>
+            <td><input type="text" class="form-control" id="studNumber" name="studNumber" [(ngModel)]="editStudentRequest.studNumber"></td>
+        </tr>
+        <tr>
+            <td><label for="email" class="form-label">Student E-mail</label></td>
+            <td><input type="text" class="form-control" id="email" name="email" [(ngModel)]="editStudentRequest.email"></td>
+        </tr>
+        <tr>
+            <td><label for="mobil" class="form-label">Student Mobil</label></td>
+            <td><input type="text" class="form-control" id="mobil" name="mobil" [(ngModel)]="editStudentRequest.mobil"></td>
+        </tr>
+        <tr>
+            <td><label for="courseName" class="form-label">Course Name</label></td>
+            <td><select id="courseName" name="courseName" [(ngModel)]="editStudentRequest.courseName">
+            <option value="IT">IT</option>
+            <option value="Data Engineer">Data Engineer</option>
+            <option value="Anvendt Technology">Anvendt Technology</option>
+          </select></td>
+        </tr>
+        <tr>
+            <td><label for="beginYear" class="form-label">Beginning Year</label></td>
+            <td><select id="beginYear" name="beginYear" [(ngModel)]="editStudentRequest.beginYear">
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+          </select></td>
+        </tr>
+    </table>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+  </form>
+</div>
+</div>
+</div>

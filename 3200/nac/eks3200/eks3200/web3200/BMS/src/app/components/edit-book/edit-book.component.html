@@ -1,0 +1,29 @@
+<div class="container">
+    <h1>Update book</h1>
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="updateBook()" >
+                <div class="mb-3">
+                    <input type="hidden" class="form-control bg-light" id="id" name="id" readonly [(ngModel)] = "updateBookRequest.id">
+                </div>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" [(ngModel)] = "updateBookRequest.title">
+                </div>
+                <div class="mb-3">
+                    <label for="author" class="form-label">Author</label>
+                    <input type="text" class="form-control" id="author" name="author" [(ngModel)] = "updateBookRequest.author">
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="number" class="form-control" id="price" name="price" [(ngModel)] = "updateBookRequest.price">
+                </div>
+                <div class="mb-3">
+                    <input type="date" class="form-control" id="publishedAt" name="publishedAt" [(ngModel)]="updateBookRequest.publishedAt" required>                   
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>   
+        </div>
+    </div>
+</div>
+ 

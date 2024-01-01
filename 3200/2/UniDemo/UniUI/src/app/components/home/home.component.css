@@ -1,0 +1,48 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  h1 i {
+    font-style: italic;
+  }
+  
+  #carouselExampleControls {
+    width: 70%;
+    margin: 20px auto;
+  }
+  
+  .carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    height: 720px; 
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .carousel-control-prev:hover,
+  .carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  

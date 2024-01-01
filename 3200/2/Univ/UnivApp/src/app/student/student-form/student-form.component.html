@@ -1,0 +1,48 @@
+<form #form="ngForm" (submit)="onSubmit(form)">
+    <input type="hidden" name="studentId" [value]="service.formData.studentId">
+    <table>
+        <tr>
+            <td style="white-space: nowrap; padding-right: 10px;">Student Name</td>
+            <td><input style="width: 250px;" class="form-control form-control-lg" 
+                placeholder="Write student's name and surname" 
+                #studentName="ngModel" name="studentName"
+                [(ngModel)]="service.formData.studentName"></td>
+        </tr>
+        <tr>
+            <td style="white-space: nowrap; padding-right: 10px;">Student Email</td>
+            <td><input style="width: 250px;" class="form-control form-control-lg" 
+                placeholder="Write student's email addresse" 
+                #studentEmail="ngModel" name="studentEmail"
+                [(ngModel)]="service.formData.studentEmail"></td>
+        </tr>
+        <tr>
+            <td style="white-space: nowrap; padding-right: 10px;">Student Mobil</td>
+            <td><input style="width: 250px;" class="form-control form-control-lg" 
+                placeholder="Write student's mobil number" 
+                #studentMobil="ngModel" name="studentMobil"
+                [(ngModel)]="service.formData.studentMobil"></td>
+        </tr>
+        <tr>
+            <td style="white-space: nowrap; padding-right: 10px;">Course Name</td>
+            <td><input style="width: 250px;" class="form-control form-control-lg" 
+                placeholder="Write student's course name" 
+                #courseName="ngModel" name="courseName"
+                [(ngModel)]="service.formData.courseName"></td>
+        </tr>
+        <tr>
+            <td style="white-space: nowrap; padding-right: 10px;">Begin Year</td>
+            <td><input style="width: 250px;" class="form-control form-control-lg" 
+                placeholder="Write student's beginning year" 
+                #beginYear="ngModel" name="beginYear"
+                [(ngModel)]="service.formData.beginYear"></td>
+        </tr>
+        <tr>
+            <td style="white-space: nowrap; padding-right: 10px;">Photo</td>
+            <td><input style="width: 250px;" class="form-control form-control-lg" 
+                placeholder="add Photo" 
+                #photoFileName="ngModel" name="photoFileName"
+                [(ngModel)]="service.formData.photoFileName"></td>
+        </tr>
+    </table>
+    <button class="btn btn-success" type="submit" style="width: 100px; height: 40px;" >Register</button>
+</form>

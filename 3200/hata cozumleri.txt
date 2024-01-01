@@ -1,0 +1,3 @@
+
+projede app.module.ts olmasi icin
+ng new ***(proje adi) --no-standalone

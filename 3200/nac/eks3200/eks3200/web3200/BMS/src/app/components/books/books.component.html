@@ -1,0 +1,42 @@
+
+<div class="row mb-3">
+  <h4 class="col-md-2">Filter by:</h4>
+  <div class="col-md-6">
+    <input type="text" class="form-control" [(ngModel)]='listFilter' placeholder="Enter keyword..."/>
+  </div>
+</div>
+
+<div class="row mb-3">
+  <div class="col-md-6">
+    <h4>Filtered by: {{listFilter}}</h4>
+  </div>
+</div>
+
+<h1>List of Books</h1>
+<div class="container">
+<table class="table table-striped" *ngIf="filteredBooks && filteredBooks.length > 0">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">Price</th>
+        <th scope="col">Published At</th>
+        <th scope="col">Actions</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of filteredBooks">
+       <td>{{book.id}}</td>
+       <td>{{book.title}}</td>
+       <td>{{book.author}}</td>
+       <td [width]="120">{{book.price | convertToCurrency: 'kr.'}}</td>
+       <td>{{ book.publishedAt | convertDate }}</td>
+       <td><a [routerLink]="['/books','edit', book.id]">Edit</a></td>
+       <td><a [routerLink]="[]" (click)="deleteBook(book.id)">Delete</a></td>
+      </tr>    
+    </tbody>
+  </table>
+<p *ngIf="!filteredBooks ||filteredBooks.length == 0">No Books found!</p>
+</div>

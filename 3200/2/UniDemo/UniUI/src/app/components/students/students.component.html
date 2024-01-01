@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row mb-3" style="padding-top: 10px;">
+    <h6 class="col-md-2">Search with student name:</h6>
+    <div class="col-md-6">
+      <input type="text" class="form-control" [(ngModel)]='listFilter' placeholder="Enter name of student..." />
+    </div>
+  </div>
+  
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <h6>Searched name: {{listFilter}}</h6>
+    </div>
+  </div>
+  
+  <div class="row mb-3">
+    <h4 class="col-md-2">Filter by course:</h4>
+    <div class="col-md-6">
+      
+      <select class="form-control" [(ngModel)]="selectedCourse" (change)="applyFilter()">
+        <option value="">All Courses</option>
+        <option *ngFor="let course of uniqueCourses" [value]="course">{{ course }}</option>
+      </select>
+    </div>
+  </div>
+</div>
+  <div class="container">
+    <h1>Students</h1>
+<table class="table" *ngIf="filteredStudents && filteredStudents.length>0">
+    <thead>
+      <tr>
+        
+        <th scope="col">Student Name</th>
+        <th scope="col">Student Surname</th>
+        <th scope="col">Student Number</th>
+        <th scope="col">Student Email</th>
+        <th scope="col">Student Mobil</th>
+        <th scope="col">Course Name</th>
+        <th scope="col">Begin Year</th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of filteredStudents">
+        
+        <td>{{ student.name | titlecase }}</td>
+        <td>{{ student.surname | titlecase}}</td>
+        <td>{{ student.studNumber }}</td>
+        <td>{{ student.email }}</td>
+        <td>{{ student.mobil }}</td>
+        <td>{{ student.courseName }}</td>
+        <td>{{ student.beginYear }}</td>
+        <td><a class="btn btn-primary" [routerLink]="['/students','edit',student.id]">Edit</a></td>
+        <td><a class="btn btn-danger" [routerLink]="[]" (click)="deleteStudent(student.id)">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <p *ngIf="!filteredStudents || filteredStudents.length==0">No Students</p>
+</div>

@@ -1,0 +1,11 @@
+studentId: 0,
+name: '',
+surname: '',
+studNumber: '',
+email: '',
+phone: '',
+course: '',
+beginYear: '',
+imageName: '',
+imageSrc: '',
+imageFile: null

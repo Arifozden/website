@@ -1,0 +1,39 @@
+<div class="bg-body-secondary text-center py-5 rounded-2">
+<h1 class="display-6 fw-bold">Student Register</h1>
+</div>
+
+
+    <div class="col-4">
+        <app-student-form />
+    </div>
+    
+<table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>studentId</th>
+                    <th>studentName</th>
+                    <th>studentEmail</th>
+                    <th>studentMobil</th>
+                    <th>courseName</th>
+                    <th>beginYear</th>
+                    <th>photoFileName</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of service.list">
+                    <td>{{student.studentId}}</td>
+                    <td>{{student.studentName}}</td>
+                    <td>{{student.studentEmail}}</td>
+                    <td>{{student.studentMobil}}</td>
+                    <td>{{student.courseName}}</td>
+                    <td>{{student.beginYear}}</td>
+                    <td>{{student.photoFileName}}</td>
+                    <td>
+                        <span><i class="fa-solid fa-trash-can fa-lg mouse-hover"></i></span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+     
+    

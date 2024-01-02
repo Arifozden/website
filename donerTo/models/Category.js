@@ -8,14 +8,8 @@ const CategorySchema = new Schema({
     required: [true, 'Please provide a name'],
     unique: true,
   },
-  description: {
+  image: {
     type: String,
-    required: [true, 'Please provide a description'],
-    trim: true,
-  },
-  createdAt: {
-    type: Date,
-    default: Date.now,
   },
   slug: {
     type: String,

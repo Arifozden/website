@@ -28,6 +28,10 @@ const ProductSchema = new Schema({
     type: String,
     unique: true,
   },
+  category: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Category',
+  },
 });
 
 ProductSchema.pre('validate', function (next) {

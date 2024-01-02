@@ -1,4 +1,5 @@
 const Product = require('../models/Product');
+const Category = require('../models/Category');
 
 exports.createProduct = async (req, res) => {
   
@@ -17,20 +18,31 @@ exports.createProduct = async (req, res) => {
 };
 
 exports.getAllProducts = async (req, res) => {
-  
-    try {
-      const products = await Product.find({});
-      res.status(200).render('products',{
-        products: products,
-        page_name: 'products'
-      })
-    } catch (error) {
-      res.status(400).json({
-        status: 'fail',
-        error,
-      });
+  try {
+    const categorySlug = req.query.categories;
+    const category = await Category.findOne({ slug: categorySlug });
+
+    let filter = {};
+
+    if (categorySlug) {
+      filter = { category: category._id };
     }
-  };
+
+    const products = await Product.find(filter); // Corrected this line
+    const categories = await Category.find({});
+    res.status(200).render('products', {
+      products,
+      categories,
+      page_name: 'products'
+    });
+  } catch (error) {
+    res.status(400).json({
+      status: 'fail',
+      error,
+    });
+  }
+};
+
 
   exports.getProduct = async (req, res) => {
   

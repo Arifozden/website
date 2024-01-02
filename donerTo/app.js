@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const pageRoute = require('./routes/pageRoute');
 const categoryRoute = require('./routes/categoryRoute');
 const productRoute = require('./routes/productRoute');
+const userRoute = require('./routes/userRoute');
 
 
 const app = express();
@@ -31,6 +32,7 @@ app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-
 app.use('/', pageRoute);
 app.use('/categories', categoryRoute);
 app.use('/products', productRoute);
+app.use('/users', userRoute);
 
 
 const port = 3000;

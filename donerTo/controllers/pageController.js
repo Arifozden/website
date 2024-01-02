@@ -9,3 +9,9 @@ exports.getIndexPage = (req, res) => {
       page_name: 'index',
     });
 };
+
+exports.getRegisterPage = (req, res) => {
+  res.status(200).render('register', {
+    page_name: 'register',
+  });
+};

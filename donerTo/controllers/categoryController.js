@@ -31,3 +31,19 @@ exports.getAllCategories = async (req, res) => {
       });
     }
   };
+
+  exports.getCategory = async (req, res) => {
+  
+    try {
+      const category = await Category.findOne({slug: req.params.slug});
+      res.status(200).render('category',{
+        category,
+        page_name: 'categories'
+      })
+    } catch (error) {
+      res.status(400).json({
+        status: 'fail',
+        error,
+      });
+    }
+  };

@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const pageRoute = require('./routes/pageRoute');
 const categoryRoute = require('./routes/categoryRoute');
+const productRoute = require('./routes/productRoute');
 
 
 const app = express();
@@ -29,6 +30,7 @@ app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-
 //Routes
 app.use('/', pageRoute);
 app.use('/categories', categoryRoute);
+app.use('/products', productRoute);
 
 
 const port = 3000;

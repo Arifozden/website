@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const slugify = require('slugify');
 
-const CategorySchema = new Schema({
+const ProductSchema = new Schema({
   name: {
     type: String,
     required: [true, 'Please provide a name'],
@@ -13,6 +13,13 @@ const CategorySchema = new Schema({
     required: [true, 'Please provide a description'],
     trim: true,
   },
+    price: {
+        type: Number,
+        required: [true, 'Please provide a price'],
+    },
+    image: {
+        type: String,
+    },
   createdAt: {
     type: Date,
     default: Date.now,
@@ -23,7 +30,7 @@ const CategorySchema = new Schema({
   },
 });
 
-CategorySchema.pre('validate', function (next) {
+ProductSchema.pre('validate', function (next) {
   this.slug = slugify(this.name, {
     lower: true,
     strict: true,
@@ -31,5 +38,5 @@ CategorySchema.pre('validate', function (next) {
   next();
 });
 
-const Category = mongoose.model('Category', CategorySchema);
-module.exports = Category;
+const Product = mongoose.model('Product', ProductSchema);
+module.exports = Product;

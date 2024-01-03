@@ -5,10 +5,7 @@ exports.createProduct = async (req, res) => {
   
   try {
     const product = await Product.create(req.body);
-    res.status(201).json({
-      status: 'success',
-      product,
-    });
+    res.status(201).redirect('/products');
   } catch (error) {
     res.status(400).json({
       status: 'fail',
@@ -28,7 +25,7 @@ exports.getAllProducts = async (req, res) => {
       filter = { category: category._id };
     }
 
-    const products = await Product.find(filter); // Corrected this line
+    const products = await Product.find(filter).sort('-createdAt'); // Corrected this line
     const categories = await Category.find({});
     res.status(200).render('products', {
       products,

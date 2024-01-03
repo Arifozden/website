@@ -17,6 +17,11 @@ const UserSchema = new Schema({
         type: String,
         required: [true, 'Please provide a password'],
     },
+    role: {
+        type: String,
+        default: 'user',
+        enum: ['user','selger','admin'],
+    },
     });
 
 UserSchema.pre('save', function (next) {

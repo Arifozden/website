@@ -46,3 +46,16 @@ exports.loginUser = async (req, res) => {
     });
   }
 };
+
+exports.logoutUser = async (req, res) => {
+  try {
+    await req.session.destroy(()=>
+    res.status(200).redirect('/')
+  ) 
+  } catch (error) {
+    res.status(500).json({
+      status: 'fail',
+      error,
+    });
+  }
+};

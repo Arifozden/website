@@ -24,10 +24,13 @@ mongoose
 //Template engine
 app.set('view engine', 'ejs');
 
+//Global variables
+global.userIN = null;
+
 //Middlewares
 app.use(express.static('public'));
-app.use(bodyParser.json()) // for parsing application/json
-app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+app.use(express.json()) // for parsing application/json
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 app.use(session({
   secret: 'my_keyboard_cat',
   resave: false,
@@ -35,6 +38,10 @@ app.use(session({
 }))
 
 //Routes
+app.use('*', (req, res, next) => {
+  userIN = req.session.userID;
+  next();
+});
 app.use('/', pageRoute);
 app.use('/categories', categoryRoute);
 app.use('/products', productRoute);

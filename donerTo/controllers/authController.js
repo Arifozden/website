@@ -31,7 +31,7 @@ exports.loginUser = async (req, res) => {
       if (passwordMatch) {
         // USER SESSION
         req.session.userID = user._id;
-        res.status(200).send('logged in');
+        res.status(200).redirect('/');
       } else {
         res.status(401).send('Invalid password');
       }

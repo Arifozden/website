@@ -1,0 +1,138 @@
+#container {
+    width: 800px;
+    background-color:bisque;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    flex: 1 1 auto;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+/* table{
+    margin: 0;
+    padding: 0;
+    border-color: antiquewhite;
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+}
+
+.list {
+    margin: 15px;
+}
+
+.list > li {
+    background-color: aliceblue;
+    padding: 5px;
+    margin-bottom: 2px;
+
+} */
+
+.list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    flex: 1;
+
+  }
+  
+  .list th, .list td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+
+  }
+  
+  .list th {
+    background-color: #f2f2f2;
+    color: #000;
+
+  }
+  
+  .list tbody tr:nth-child(even) {
+    background-color:blanchedalmond;
+
+  }
+  
+  .list tbody tr:hover {
+    background-color: #d4edda; /* Veya istediğiniz başka bir renk */
+
+  }
+  
+  .form {
+    margin-left: 20px; /* İstediğiniz boşluk miktarını ayarlayabilirsiniz */
+    margin-right: 20px; /* İstediğiniz boşluk miktarını ayarlayabilirsiniz */
+    flex: 1;
+
+  }
+
+  h1 {
+    text-align: center;
+    color: #000;
+
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+
+  }
+
+  .form-container,
+.list-container {
+  flex: 1;
+  margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+
+}
+
+.btn{
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    margin-top: 10px;
+    flex: 1;
+
+}
+
+
+
+.btn > button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.btn > button:last-child {
+    margin-right: 0px;
+}
+
+.btn > button:hover {
+    background-color: #d4edda;
+    color: #000;
+    cursor: pointer;
+}

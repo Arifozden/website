@@ -7,11 +7,24 @@
 			<h1>Products<span class="m_1">Lorem Ipsum dolroin gravida nibh vel velit.</span></h1>
 		</div>
 	</div>
-	
+	<% if(products){ %>
     <div id="overviews" class="section wb">
         <div class="container">
             <div class="row"> 
+
+				
+
                 <div class="col-lg-9 blog-post-single">
+					<% if(flashMessages) { %>
+						<% if(flashMessages.success) { %>
+							<div class="alert alert-success">
+								<%= flashMessages.success %>
+							</div>
+						<% } else if(flashMessages.error) { %>
+							<div class="alert alert-danger">
+								<%= flashMessages.error %>
+							</div>
+					<% }} %>
 				            <div class="row"> 
 
 								<% for(let i=0;i<products.length;i++){ %>
@@ -27,7 +40,7 @@
 								<h2><a href="/products/<%= products[i].slug  %>" title=""><%= products[i].name  %></a></h2>
 							</div>
 							<div class="course-desc">
-								<p><%= products[i].description  %></p>
+								<p><%= products[i].description.substring(0,100) + "..."  %></p>
 							</div>
                             <div class="div">
                                 <p><%= products[i].price  %></p>
@@ -35,7 +48,7 @@
 						</div>
 						<div class="course-meta-bot">
 							<ul>
-								<li><i class="fa fa-user" aria-hidden="true"></i>Teacher Name</li>
+								<li><i class="fa fa-user" aria-hidden="true"></i><%= products[i].user.name  %></li>
 							</ul>
 						</div>
 					</div>
@@ -47,10 +60,10 @@
 				<div class="col-lg-3 col-12 right-single">
 					<div class="widget-search">
 						<div class="site-search-area">
-							<form method="get" id="site-searchform" action="#">
+							<form method="GET" id="site-searchform" action="/products">
 								<div>
-									<input class="input-text form-control" name="search-k" id="search-k" placeholder="Search keywords..." type="text">
-									<input id="searchsubmit" value="Search" type="submit">
+									<input class="input-text form-control" name="search" id="search-k" placeholder="Search..." type="text">
+									<button id="searchsubmit" value="Search" type="submit"></button>
 								</div>
 							</form>
 						</div>
@@ -67,5 +80,5 @@
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->
-
+<% } %>
 	<%- include('partials/_footer'); %>

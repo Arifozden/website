@@ -1,0 +1,2 @@
+export type TFilterGender = "Male" | "Female" | "Genderless" | "Unknown" | ""
+export type TFilterSpecies = "Human" | "Alien" | "Humanoid" | "Animal" | "Robot" | "Cronenberg" | "Mytholog" | "Diease" | "Poopybutthole" | "Unknown" | ""
